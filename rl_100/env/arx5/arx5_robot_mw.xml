@@ -1,0 +1,173 @@
+<mujoco model="ARX L5 (MetaWorld-style EE interface)">
+  <!-- Robot model for the MetaWorld-style EE-space interface (action_mode='metaworld').
+
+       Physics copy of the VALIDATED pick-place robot from the external
+       3D-Diffusion-Policy experiment (diffusion_policy_3d/env/arx5/arx5_robot.xml):
+         * gravcomp="1" on every robot body (no gravity sag -> a "correct" PD
+           joint command lands at the correct EE pose),
+         * soft arm PD gains (kp 100..200) instead of the stiff 400..2000,
+         * BOTH fingers driven by their own symmetric position actuators
+           (kp 1200, +-200 N; no equality constraint) -> symmetric clamp,
+         * thin mesh-aligned fingertip pads with friction 8.0 + rolling/
+           torsional resistance (keeps a grasped sphere from rolling out of
+           the pinch during fast lateral carries),
+         * `finger_site` (fingertip midpoint) used as the EE reference for
+           differential IK + the 9-dim agent state, like MetaWorld Sawyer.
+
+       The legacy arx5_robot.xml (stiff gains, equality-coupled gripper) is
+       untouched and still used by the legacy 'joint' / 'ee_delta' modes. -->
+  <compiler angle="radian" meshdir="assets"/>
+
+  <option integrator="implicitfast" cone="elliptic" impratio="20" tolerance="1e-8"/>
+
+  <default>
+    <default class="arx_l5">
+      <joint frictionloss="0.3" armature="0.005"/>
+      <position inheritrange="1" forcerange="-300 300"/>
+      <default class="finger">
+        <joint frictionloss="0" damping="1.0" type="slide"/>
+        <position forcerange="-200 200"/>
+      </default>
+      <default class="visual">
+        <geom group="2" type="mesh" contype="0" conaffinity="0" density="0"/>
+      </default>
+      <default class="collision">
+        <geom group="3" type="capsule" contype="1" conaffinity="1"/>
+      </default>
+    </default>
+  </default>
+
+  <asset>
+    <material name="black_mat" rgba="0.18 0.18 0.18 1"/>
+
+    <mesh name="base_link" file="base_link.obj"/>
+    <mesh name="link1" file="link1.obj"/>
+    <mesh name="link2" file="link2.obj"/>
+    <mesh name="link3" file="link3.obj"/>
+    <mesh name="link4" file="link4.obj"/>
+    <mesh name="link5" file="link5.obj"/>
+    <mesh name="link6" file="link6.obj"/>
+    <mesh name="link7" file="link7.obj"/>
+    <mesh name="link8" file="link8.obj"/>
+    <mesh name="camera" file="camera.obj"/>
+  </asset>
+
+  <worldbody>
+    <light mode="targetbodycom" target="link8" pos="1 0 1"/>
+    <body name="base_link" pos="0 0 0.15" gravcomp="1">
+      <geom mesh="base_link" material="black_mat" class="visual"/>
+      <geom mesh="base_link" class="collision"/>
+      <!-- Pedestal stand: fills the gap between the floor (z=0) and the base
+           bottom (z=0.15) so the shoulder sits near table height -->
+      <geom name="pedestal_vis" type="cylinder" size="0.03 0.077" pos="0 0 -0.077" material="black_mat" group="2" contype="0" conaffinity="0"/>
+      <geom name="pedestal_col" type="cylinder" size="0.03 0.077" pos="0 0 -0.077" material="black_mat" group="3" contype="1" conaffinity="1" friction="1 0.005 0.0001"/>
+      <body name="link1" pos="0 0 0.0565" gravcomp="1">
+        <inertial pos="0.0050395 -0.0077407 0.020897" quat="0.632157 0.714526 -0.263733 0.142391" mass="0.096804"
+          diaginertia="0.000118945 9.40205e-05 4.70346e-05"/>
+        <joint name="joint1" axis="0 0 1" range="-3.14 3.14"/>
+        <geom mesh="link1" material="black_mat" class="visual"/>
+        <geom mesh="link1" class="collision"/>
+        <body name="link2" pos="0.02 0 0.047" gravcomp="1">
+          <inertial pos="-0.12992 -0.0011822 -2.6366e-05" quat="0.501263 0.501263 0.498734 0.498734" mass="1.1988"
+            diaginertia="0.0164704 0.01646 0.000649595"/>
+          <joint name="joint2" axis="0 1 0" range="0 3.14"/>
+          <geom mesh="link2" material="black_mat" class="visual"/>
+          <geom mesh="link2" class="collision"/>
+          <body name="link3" pos="-0.264 0 0" quat="-3.67321e-06 -1 0 0" gravcomp="1">
+            <inertial pos="0.16181 0.0011723 -0.05455" quat="0.518857 0.484372 0.465704 0.52848" mass="0.84082"
+              diaginertia="0.0084909 0.00841207 0.000747034"/>
+            <joint name="joint3" axis="0 1 0" range="0 3.14"/>
+            <geom mesh="link3" material="black_mat" class="visual"/>
+            <geom mesh="link3" class="collision"/>
+            <geom type="box" size="0.062 0.001 0.01" pos="0.112 -0.025 -0.06" rgba="1 0 0 1" class="visual"/>
+            <geom type="box" size="0.062 0.001 0.01" pos="0.112 0.023 -0.06" rgba="1 0 0 1" class="visual"/>
+            <body name="link4" pos="0.245 -5e-05 -0.06" gravcomp="1">
+              <inertial pos="0.041751 0.0054236 -0.03337" quat="0.919386 -0.0641253 0.311071 -0.23206" mass="0.12432"
+                diaginertia="0.000303193 0.000235316 0.000101491"/>
+              <joint name="joint4" axis="0 1 0" range="-1.7 1.7"/>
+              <geom mesh="link4" material="black_mat" class="visual"/>
+              <geom mesh="link4" class="collision"/>
+              <body name="link5" pos="0.073914 5e-05 -0.083391" gravcomp="1">
+                <inertial pos="-8.3435e-05 -1.5428e-05 0.052216" quat="0.998247 0 -0.0591776 0" mass="0.63601"
+                  diaginertia="0.000848329 0.00082 0.000251671"/>
+                <joint name="joint5" axis="0 0 1" range="-1.7 1.7"/>
+                <geom mesh="link5" material="black_mat" class="visual"/>
+                <geom mesh="link5" class="collision"/>
+                <body name="link6" pos="0.025286 0 0.083391" quat="-3.67321e-06 1 0 0" gravcomp="1">
+                  <inertial pos="0.041697 2.4368e-05 0.00014464" quat="0.5 0.5 -0.5 0.5" mass="0.44089"
+                    diaginertia="0.0005 0.00038 0.00028"/>
+                  <joint name="joint6" axis="1 0 0" range="-3.14 3.14"/>
+                  <geom mesh="link6" material="black_mat" class="visual"/>
+                  <geom mesh="link6" class="collision"/>
+                  <geom mesh="camera" pos="0.06 0 -0.01" quat="-1 0 0 1" material="black_mat" class="visual"/>
+                  <geom mesh="camera" pos="0.06 0 -0.01" quat="-1 0 0 1" class="collision"/>
+                  <camera name="wrist_cam" pos="0.0475 0 0.075" mode="fixed" euler="0 -1.1 -1.5708"
+                    focal="1.93e-3 1.93e-3" resolution="1280 720" sensorsize="3896e-6 2140e-6"/>
+                  <site name="ee_site" type="sphere" size="0.005" pos="0.136 0 0" group="4" rgba="0 1 0 0"/>
+                  <!-- Grasp center site: midpoint between the two fingers -->
+                  <site name="grasp_site" type="sphere" size="0.005" pos="0.08657 0 -0.0002436" group="4" rgba="0 0 1 0"/>
+                  <!-- Finger-tip center: midpoint of the two fingertips (link7/link8
+                       collision box centers at (0.13657, +-0.0019, 0.01476)). This is
+                       the natural EE reference for a top-down grasp: driving it to the
+                       object centre puts the fingertips exactly on the object. -->
+                  <site name="finger_site" type="sphere" size="0.005" pos="0.13657 0 0.0147564" group="4" rgba="1 1 0 0"/>
+                  <body name="link7" pos="0.08657 0.024896 -0.0002436" gravcomp="1">
+                    <inertial pos="-0.00035522 -0.007827 -0.0029883" quat="0.5 0.5 0.5 0.5" mass="0.064798"
+                      diaginertia="3e-05 3e-05 2e-05"/>
+                    <joint name="joint7" axis="0 1 0" class="finger" range="0 0.044"/>
+                    <site name="left_touch_site" type="box" size="0.008 0.002 0.008" pos="0 0 0.00524" group="4" rgba="0 1 0 0.3"/>
+                    <geom mesh="link7" material="black_mat" class="visual"/>
+                    <!-- Single fingertip collision pad, centred on the finger
+                         tip (x = 0.05 -- the same x as the finger_site, so it
+                         is level with the sphere centre during a grasp).
+                         Half-height 0.012 (2.4 cm tall) hugs a generous band
+                         around the sphere's equator. When the finger_site is
+                         driven to ~1.1 cm above the sphere centre the pad
+                         centre sits exactly on the centre line: the pads
+                         pinch the WIDEST 7 cm band, stop at the full sphere
+                         diameter, and never cut into the ball. Friction 8.0
+                         with rolling/torsional resistance keeps the sphere
+                         from rolling out of the pinch during fast carries. -->
+                    <geom name="left_finger_pad" type="box" size="0.02 0.002 0.012" pos="0.05 -0.023 0" rgba="0 0 1 1" class="collision" friction="8.0 0.05 0.02" solref="0.004 1"/>
+                  </body>
+                  <body name="link8" pos="0.08657 -0.0249 -0.00024366" gravcomp="1">
+                    <inertial pos="-0.000355223 0.00782769 0.00242006" quat="0.5 0.5 0.5 0.5" mass="0.0647982"
+                      diaginertia="3e-05 3e-05 2e-05"/>
+                    <joint name="joint8" axis="0 1 0" class="finger" range="-0.044 0"/>
+                    <site name="right_touch_site" type="box" size="0.008 0.002 0.008" pos="0 0 0.00524" group="4" rgba="0 1 0 0.3"/>
+                    <geom mesh="link8" material="black_mat" class="visual"/>
+                    <geom name="right_finger_pad" type="box" size="0.02 0.002 0.012" pos="0.05 0.023 0" rgba="0 0 1 1" class="collision" friction="8.0 0.05 0.02" solref="0.004 1"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <contact>
+    <exclude body1="base_link" body2="link1"/>
+  </contact>
+
+  <actuator>
+    <!-- Faster arm tracking: kp/kv raised ~2.5x vs the original soft-gain
+         set so the PD controllers settle the joint targets within one 80 ms
+         env step (~0.10-0.12 m of EE travel per step vs ~0.047 before).
+         Kept damped (kv ~ 0.07*kp) to avoid overshoot when the gripper
+         makes contact with the sphere / box. -->
+    <position name="joint1" joint="joint1" class="arx_l5" kp="500" kv="36"/>
+    <position name="joint2" joint="joint2" class="arx_l5" kp="500" kv="36"/>
+    <position name="joint3" joint="joint3" class="arx_l5" kp="500" kv="36"/>
+    <position name="joint4" joint="joint4" class="arx_l5" kp="380" kv="28"/>
+    <position name="joint5" joint="joint5" class="arx_l5" kp="260" kv="20"/>
+    <position name="joint6" joint="joint6" class="arx_l5" kp="260" kv="20"/>
+    <!-- Both fingers driven symmetrically (no equality constraint): guarantees a
+         symmetric clamp on the object. Moderate kp: firm enough that friction
+         holds the object against any small lateral force during the lift, but
+         gentle enough not to knock/tilt the object when the fingers close. -->
+    <position name="gripper" joint="joint7" class="finger" kp="1200" kv="300" forcerange="-200 200"/>
+    <position name="gripper2" joint="joint8" class="finger" kp="1200" kv="300" forcerange="-200 200"/>
+  </actuator>
+</mujoco>

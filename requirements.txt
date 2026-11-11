@@ -1,0 +1,21 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+# Core runtime (tested on the original host with Python 3.8.20 / CUDA 12.1)
+torch==2.4.0+cu121
+numpy==1.23.5
+scipy==1.10.1
+mujoco==3.2.3
+gym==0.21.0
+gym-notices==0.0.8
+diffusers==0.33.1
+huggingface_hub==0.36.2
+omegaconf==2.3.0
+dill==0.3.5.1
+einops==0.8.1
+numba==0.56.4
+llvmlite==0.39.1
+numcodecs==0.12.1
+zarr==2.12.0
+termcolor==2.4.0
+PyYAML==6.0.3
+setuptools==59.5.0

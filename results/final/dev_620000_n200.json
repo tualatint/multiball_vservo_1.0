@@ -1,0 +1,5024 @@
+{
+  "ckpt": "/media/j15/hdd2/RL-100/multiball_vservo_2026/runs/bc_vservo_multiball_v2/best.ckpt",
+  "vision_source": "vision",
+  "switch_mode": "vision",
+  "residual_gain": 0.2,
+  "residual_scale": 0.1,
+  "residual_stage": "predrop",
+  "lift_eps": 0.012,
+  "grasp_guard": true,
+  "n": 200,
+  "success": 200,
+  "success_rate": 1.0,
+  "wilson_ci": [
+    0.9811539940816791,
+    1.0
+  ],
+  "mean_steps": 41.685,
+  "success_xy_mm_mean": 9.27234590627744,
+  "success_xy_mm_p95": 17.307739219061563,
+  "stage1_reached": 200,
+  "recoveries_total": 1,
+  "rows": [
+    {
+      "seed": 620000,
+      "success": true,
+      "steps": 40,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0017002093372866511,
+        -0.013796037994325161,
+        -0.0063826241530478
+      ],
+      "vision_xy_mm": 13.90040920733847,
+      "vision_z_mm": -6.3826241530478,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011069191001245928,
+      "object_pos": [
+        0.29684033180808633,
+        0.16060865148541853,
+        0.22407407375587543
+      ],
+      "vision_frames": 41,
+      "vision_valid_frames": 39,
+      "recoveries": 0
+    },
+    {
+      "seed": 620001,
+      "success": true,
+      "steps": 53,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006567450240254402,
+        -0.006125607527792454,
+        2.227775075880345e-05
+      ],
+      "vision_xy_mm": 8.980783386919272,
+      "vision_z_mm": 0.02227775075880345,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011582811618832055,
+      "object_pos": [
+        0.29328462718622017,
+        0.15943744101805662,
+        0.2571670325625426
+      ],
+      "vision_frames": 54,
+      "vision_valid_frames": 53,
+      "recoveries": 0
+    },
+    {
+      "seed": 620002,
+      "success": true,
+      "steps": 36,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003005343722179532,
+        0.011511696502566338,
+        -0.0019131690496578813
+      ],
+      "vision_xy_mm": 11.89753114119236,
+      "vision_z_mm": -1.9131690496578813,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014090490933440168,
+      "object_pos": [
+        0.2903104250021565,
+        0.139769942761327,
+        0.24349203130817226
+      ],
+      "vision_frames": 37,
+      "vision_valid_frames": 25,
+      "recoveries": 0
+    },
+    {
+      "seed": 620003,
+      "success": true,
+      "steps": 42,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006601111963391304,
+        0.007255279924720526,
+        -0.0013322477461770177
+      ],
+      "vision_xy_mm": 9.808861602616302,
+      "vision_z_mm": -1.3322477461770177,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011721792854145822,
+      "object_pos": [
+        0.29430967241949246,
+        0.1397520441188489,
+        0.2562448779036283
+      ],
+      "vision_frames": 43,
+      "vision_valid_frames": 42,
+      "recoveries": 0
+    },
+    {
+      "seed": 620004,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.000919706595595926,
+        -0.008053557947278023,
+        -0.0016323102172464132
+      ],
+      "vision_xy_mm": 8.10590253038782,
+      "vision_z_mm": -1.6323102172464132,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013411792182130169,
+      "object_pos": [
+        0.30305955037569277,
+        0.16305815151678238,
+        0.25513906039733086
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 43,
+      "recoveries": 0
+    },
+    {
+      "seed": 620005,
+      "success": true,
+      "steps": 29,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006109718233346939,
+        0.006931861862540245,
+        -0.007456498220562935
+      ],
+      "vision_xy_mm": 9.240095549951416,
+      "vision_z_mm": -7.456498220562935,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.007808980717084779,
+      "object_pos": [
+        0.296424384343182,
+        0.14305772713626724,
+        0.25892697846067325
+      ],
+      "vision_frames": 30,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620006,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.000885309767909348,
+        -0.007443065755069256,
+        -0.0019204062409698963
+      ],
+      "vision_xy_mm": 7.49553208381102,
+      "vision_z_mm": -1.9204062409698963,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012959801970454588,
+      "object_pos": [
+        0.30092393375569876,
+        0.16292682534609634,
+        0.2498344443667973
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 45,
+      "recoveries": 0
+    },
+    {
+      "seed": 620007,
+      "success": true,
+      "steps": 38,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0025377250276505947,
+        0.008450127206742764,
+        -0.002438100753352046
+      ],
+      "vision_xy_mm": 8.822964248261378,
+      "vision_z_mm": -2.438100753352046,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012998160933969955,
+      "object_pos": [
+        0.2983074351194375,
+        0.13711250948436937,
+        0.24929919354801727
+      ],
+      "vision_frames": 39,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620008,
+      "success": true,
+      "steps": 36,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.009951052255928516,
+        -0.0015445150202140212,
+        -0.001683563576079905
+      ],
+      "vision_xy_mm": 10.07020196658869,
+      "vision_z_mm": -1.683563576079905,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.017070619178165297,
+      "object_pos": [
+        0.2829809431329596,
+        0.14867420119083274,
+        0.24444779624575225
+      ],
+      "vision_frames": 37,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620009,
+      "success": true,
+      "steps": 39,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.008090773597359657,
+        0.004866571631282568,
+        -0.0001692005171207711
+      ],
+      "vision_xy_mm": 9.441617279160198,
+      "vision_z_mm": -0.1692005171207711,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.017374962506366838,
+      "object_pos": [
+        0.28448046919439346,
+        0.14218760691775667,
+        0.24103494679419635
+      ],
+      "vision_frames": 40,
+      "vision_valid_frames": 25,
+      "recoveries": 0
+    },
+    {
+      "seed": 620010,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0004179025418125093,
+        -0.0021339834202080965,
+        -0.0004516789340414107
+      ],
+      "vision_xy_mm": 2.174517825214685,
+      "vision_z_mm": -0.4516789340414107,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013613328086935108,
+      "object_pos": [
+        0.30151343917389745,
+        0.16352893948058933,
+        0.25023261665021956
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620011,
+      "success": true,
+      "steps": 29,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004916848614811897,
+        0.004223404917865992,
+        -0.007384351920336485
+      ],
+      "vision_xy_mm": 6.481708833419804,
+      "vision_z_mm": -7.384351920336485,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.009219327577809196,
+      "object_pos": [
+        0.29571027532888605,
+        0.14183946918191043,
+        0.258456717648302
+      ],
+      "vision_frames": 30,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620012,
+      "success": true,
+      "steps": 35,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006855781190097332,
+        0.012678159400820732,
+        -0.002095770090818405
+      ],
+      "vision_xy_mm": 14.413100343753648,
+      "vision_z_mm": -2.095770090818405,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.016107187868845622,
+      "object_pos": [
+        0.287468101980801,
+        0.1398810557329984,
+        0.24418016527334047
+      ],
+      "vision_frames": 36,
+      "vision_valid_frames": 25,
+      "recoveries": 0
+    },
+    {
+      "seed": 620013,
+      "success": true,
+      "steps": 38,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00824540201574564,
+        0.002737819217145443,
+        -0.0010894036386162043
+      ],
+      "vision_xy_mm": 8.688055505522115,
+      "vision_z_mm": -1.0894036386162043,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.0176390819789034,
+      "object_pos": [
+        0.28348416320895303,
+        0.1438061039603514,
+        0.23791364592804393
+      ],
+      "vision_frames": 39,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620014,
+      "success": true,
+      "steps": 33,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0022945324890315533,
+        0.019462859258055687,
+        -0.002238427521660924
+      ],
+      "vision_xy_mm": 19.59764704861544,
+      "vision_z_mm": -2.238427521660924,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01316046705774075,
+      "object_pos": [
+        0.29148433588110967,
+        0.13996598994458728,
+        0.24816728175163477
+      ],
+      "vision_frames": 34,
+      "vision_valid_frames": 25,
+      "recoveries": 0
+    },
+    {
+      "seed": 620015,
+      "success": true,
+      "steps": 37,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004912677686661482,
+        0.008390404284000397,
+        -0.005049934610724449
+      ],
+      "vision_xy_mm": 9.7228229492259,
+      "vision_z_mm": -5.049934610724449,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013313314579868918,
+      "object_pos": [
+        0.2945209608539098,
+        0.1378663906796798,
+        0.25870491695832537
+      ],
+      "vision_frames": 38,
+      "vision_valid_frames": 28,
+      "recoveries": 0
+    },
+    {
+      "seed": 620016,
+      "success": true,
+      "steps": 29,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0025921412743628025,
+        0.0030818404629826546,
+        -0.006992305163294077
+      ],
+      "vision_xy_mm": 4.027025828763997,
+      "vision_z_mm": -6.992305163294077,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.0101916008009787,
+      "object_pos": [
+        0.2996507856985776,
+        0.1398143838547591,
+        0.25671635631088985
+      ],
+      "vision_frames": 30,
+      "vision_valid_frames": 29,
+      "recoveries": 0
+    },
+    {
+      "seed": 620017,
+      "success": true,
+      "steps": 54,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003211750416085124,
+        0.009884007275104523,
+        0.0022936894092708826
+      ],
+      "vision_xy_mm": 10.392734988901724,
+      "vision_z_mm": 2.2936894092708826,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01588574627095931,
+      "object_pos": [
+        0.2920894511988479,
+        0.13622392827218555,
+        0.2380954645333908
+      ],
+      "vision_frames": 55,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620018,
+      "success": true,
+      "steps": 32,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006317072547972202,
+        0.004863511770963669,
+        -0.003883394645527005
+      ],
+      "vision_xy_mm": 7.972399408123389,
+      "vision_z_mm": -3.883394645527005,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.010020849621598842,
+      "object_pos": [
+        0.29236645016779805,
+        0.14350797842748597,
+        0.25163891007081124
+      ],
+      "vision_frames": 33,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620019,
+      "success": true,
+      "steps": 38,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.009324692189693451,
+        0.0030952226370573044,
+        -0.0010170897003263235
+      ],
+      "vision_xy_mm": 9.82498282978052,
+      "vision_z_mm": -1.0170897003263235,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.015514232415218878,
+      "object_pos": [
+        0.28506301602825135,
+        0.14580739731656428,
+        0.24477454171692153
+      ],
+      "vision_frames": 39,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620020,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.00016872903506737202,
+        0.009998248890042305,
+        0.0009705373086035252
+      ],
+      "vision_xy_mm": 9.99967251236294,
+      "vision_z_mm": 0.9705373086035252,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.04062870968472569,
+      "object_pos": [
+        0.3050597279356197,
+        0.10968758002968275,
+        0.22105311547402287
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 45,
+      "recoveries": 0
+    },
+    {
+      "seed": 620021,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00477698864415288,
+        0.007538413628935814,
+        0.0016616276698186994
+      ],
+      "vision_xy_mm": 8.924533631921099,
+      "vision_z_mm": 1.6616276698186994,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011151037756269282,
+      "object_pos": [
+        0.2987973268284392,
+        0.13891400792512681,
+        0.250502737664102
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 45,
+      "recoveries": 0
+    },
+    {
+      "seed": 620022,
+      "success": true,
+      "steps": 37,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.009605400264263153,
+        0.0011294218711555004,
+        -0.0019325496396049857
+      ],
+      "vision_xy_mm": 9.671572157604524,
+      "vision_z_mm": -1.9325496396049857,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.015437635690755949,
+      "object_pos": [
+        0.2849859293043164,
+        0.14640858288895364,
+        0.24909163082764152
+      ],
+      "vision_frames": 38,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620023,
+      "success": true,
+      "steps": 48,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003881335025653243,
+        0.008993413299322128,
+        0.0014920097310096025
+      ],
+      "vision_xy_mm": 9.795215380673708,
+      "vision_z_mm": 1.4920097310096025,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014991528975480723,
+      "object_pos": [
+        0.29444628895476455,
+        0.1360751217366647,
+        0.2431630350191214
+      ],
+      "vision_frames": 49,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620024,
+      "success": true,
+      "steps": 50,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0017890027957037091,
+        -0.003758231410756707,
+        -0.0016652242047712207
+      ],
+      "vision_xy_mm": 4.1623111776793,
+      "vision_z_mm": -1.6652242047712207,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014578188067443494,
+      "object_pos": [
+        0.3051626548775334,
+        0.1636334354417818,
+        0.22429735350644533
+      ],
+      "vision_frames": 51,
+      "vision_valid_frames": 49,
+      "recoveries": 0
+    },
+    {
+      "seed": 620025,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0016634619096294045,
+        -0.0031653305049985647,
+        -0.002690595341846347
+      ],
+      "vision_xy_mm": 3.5758107794823784,
+      "vision_z_mm": -2.690595341846347,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013439803971046174,
+      "object_pos": [
+        0.30301706294119474,
+        0.16309678059635335,
+        0.2598252899598023
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 43,
+      "recoveries": 0
+    },
+    {
+      "seed": 620026,
+      "success": true,
+      "steps": 39,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007081152405589819,
+        0.005403229501098394,
+        0.0004203504358883947
+      ],
+      "vision_xy_mm": 8.907166128052765,
+      "vision_z_mm": 0.4203504358883947,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012736354734004711,
+      "object_pos": [
+        0.29007693879130986,
+        0.14201579132543535,
+        0.2453656824647925
+      ],
+      "vision_frames": 40,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620027,
+      "success": true,
+      "steps": 35,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007917442359030247,
+        0.006391534116119146,
+        -0.0018066595075652003
+      ],
+      "vision_xy_mm": 10.175342837766273,
+      "vision_z_mm": -1.8066595075652003,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011156929734828102,
+      "object_pos": [
+        0.29211408985793197,
+        0.14210763011896171,
+        0.24595161481981248
+      ],
+      "vision_frames": 36,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620028,
+      "success": true,
+      "steps": 36,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00042028274037875235,
+        0.014896361157298088,
+        -0.0014476054348051548
+      ],
+      "vision_xy_mm": 14.902288861464184,
+      "vision_z_mm": -1.4476054348051548,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01411961430290304,
+      "object_pos": [
+        0.30436465165814536,
+        0.13657192031726825,
+        0.24763542975396802
+      ],
+      "vision_frames": 37,
+      "vision_valid_frames": 36,
+      "recoveries": 0
+    },
+    {
+      "seed": 620029,
+      "success": true,
+      "steps": 42,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0012337100924924016,
+        0.002876591170206666,
+        -0.0026660331059247255
+      ],
+      "vision_xy_mm": 3.1299867975486038,
+      "vision_z_mm": -2.6660331059247255,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013317336465545917,
+      "object_pos": [
+        0.3013293513070104,
+        0.1632508216967518,
+        0.2559815582085522
+      ],
+      "vision_frames": 43,
+      "vision_valid_frames": 42,
+      "recoveries": 0
+    },
+    {
+      "seed": 620030,
+      "success": true,
+      "steps": 37,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.001620100112631917,
+        0.0009170603007078171,
+        -0.006658444181084633
+      ],
+      "vision_xy_mm": 1.8616455006483545,
+      "vision_z_mm": -6.658444181084633,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.010658964006949061,
+      "object_pos": [
+        0.29663312033915373,
+        0.1398867594189194,
+        0.22430771516841377
+      ],
+      "vision_frames": 38,
+      "vision_valid_frames": 36,
+      "recoveries": 0
+    },
+    {
+      "seed": 620031,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0007814376731403172,
+        0.0026874791365116835,
+        -0.003291403641924262
+      ],
+      "vision_xy_mm": 2.7987834761175323,
+      "vision_z_mm": -3.291403641924262,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014493433514361826,
+      "object_pos": [
+        0.3027051523943489,
+        0.16423874171261543,
+        0.22418351495912117
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 45,
+      "recoveries": 0
+    },
+    {
+      "seed": 620032,
+      "success": true,
+      "steps": 30,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.002949510235339403,
+        0.00598585931584239,
+        -0.007123550865799189
+      ],
+      "vision_xy_mm": 6.6730894177606395,
+      "vision_z_mm": -7.123550865799189,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012016222695672152,
+      "object_pos": [
+        0.2965353522966914,
+        0.13849409611703864,
+        0.2598961745564825
+      ],
+      "vision_frames": 31,
+      "vision_valid_frames": 30,
+      "recoveries": 0
+    },
+    {
+      "seed": 620033,
+      "success": true,
+      "steps": 34,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.005276728421449661,
+        0.00661700963973999,
+        -0.0013481921050697565
+      ],
+      "vision_xy_mm": 8.463372815027505,
+      "vision_z_mm": -1.3481921050697565,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013213654272373,
+      "object_pos": [
+        0.2927405198649527,
+        0.13895913919122901,
+        0.2474180261942637
+      ],
+      "vision_frames": 35,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620034,
+      "success": true,
+      "steps": 37,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0045151119120419025,
+        0.007679349277168512,
+        -0.0015575333964079618
+      ],
+      "vision_xy_mm": 8.90834669840657,
+      "vision_z_mm": -1.5575333964079618,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012666061528261566,
+      "object_pos": [
+        0.2961471601933384,
+        0.13793414984089758,
+        0.2541544467419586
+      ],
+      "vision_frames": 38,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620035,
+      "success": true,
+      "steps": 44,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0015115656424313784,
+        0.0024832345079630613,
+        -0.0037712573539465666
+      ],
+      "vision_xy_mm": 2.9071092708939466,
+      "vision_z_mm": -3.7712573539465666,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013945753204669365,
+      "object_pos": [
+        0.2980044679194018,
+        0.16380224199761942,
+        0.2242786328844779
+      ],
+      "vision_frames": 45,
+      "vision_valid_frames": 43,
+      "recoveries": 0
+    },
+    {
+      "seed": 620036,
+      "success": true,
+      "steps": 47,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0009165859082713723,
+        -0.005004222504794598,
+        -0.0027356010396033525
+      ],
+      "vision_xy_mm": 5.087472123239043,
+      "vision_z_mm": -2.7356010396033525,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014690230676497865,
+      "object_pos": [
+        0.3032700776905293,
+        0.16432164338428454,
+        0.22411467923113865
+      ],
+      "vision_frames": 48,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620037,
+      "success": true,
+      "steps": 30,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0059270053170621395,
+        0.0038728017825633287,
+        -0.0071916766464710236
+      ],
+      "vision_xy_mm": 7.080111981848067,
+      "vision_z_mm": -7.191676646471024,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.010479834679327667,
+      "object_pos": [
+        0.294643932029853,
+        0.14099225495447365,
+        0.2586132565892191
+      ],
+      "vision_frames": 31,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620038,
+      "success": true,
+      "steps": 54,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006051983684301376,
+        0.007233666721731424,
+        0.00010500141797820106
+      ],
+      "vision_xy_mm": 9.43146016034287,
+      "vision_z_mm": 0.10500141797820106,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.015663189339237625,
+      "object_pos": [
+        0.2885230330755186,
+        0.13934097891496752,
+        0.2418232093342616
+      ],
+      "vision_frames": 55,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620039,
+      "success": true,
+      "steps": 52,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0032806280069053173,
+        -0.0036483549047261477,
+        -0.00351565214805305
+      ],
+      "vision_xy_mm": 4.906425749008221,
+      "vision_z_mm": -3.51565214805305,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012833798216315523,
+      "object_pos": [
+        0.29635555085021886,
+        0.16230546086303813,
+        0.224102944636058
+      ],
+      "vision_frames": 53,
+      "vision_valid_frames": 51,
+      "recoveries": 0
+    },
+    {
+      "seed": 620040,
+      "success": true,
+      "steps": 41,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004172997083514929,
+        -0.008841373957693577,
+        -0.0042351968586444855
+      ],
+      "vision_xy_mm": 9.776696687470993,
+      "vision_z_mm": -4.2351968586444855,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.010763583301371123,
+      "object_pos": [
+        0.2965419083396979,
+        0.16019295479998338,
+        0.2243070038915638
+      ],
+      "vision_frames": 42,
+      "vision_valid_frames": 40,
+      "recoveries": 0
+    },
+    {
+      "seed": 620041,
+      "success": true,
+      "steps": 44,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007941361516714096,
+        0.006607463117688894,
+        0.0002778973139356822
+      ],
+      "vision_xy_mm": 10.330720768211995,
+      "vision_z_mm": 0.2778973139356822,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.010144600405998114,
+      "object_pos": [
+        0.29306067414568326,
+        0.14260008958939444,
+        0.2521547330823659
+      ],
+      "vision_frames": 45,
+      "vision_valid_frames": 44,
+      "recoveries": 0
+    },
+    {
+      "seed": 620042,
+      "success": true,
+      "steps": 38,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.005631318315863609,
+        0.008792110718786716,
+        -0.0017160041024908423
+      ],
+      "vision_xy_mm": 10.44092701181199,
+      "vision_z_mm": -1.7160041024908423,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01491700725079124,
+      "object_pos": [
+        0.2894986500332386,
+        0.1394057206854001,
+        0.24589698430651402
+      ],
+      "vision_frames": 39,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620043,
+      "success": true,
+      "steps": 50,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0017766556702554226,
+        -0.004991892259567976,
+        -0.001228249166160822
+      ],
+      "vision_xy_mm": 5.298631304571532,
+      "vision_z_mm": -1.228249166160822,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012813812968091665,
+      "object_pos": [
+        0.3011989657612576,
+        0.16275759710464968,
+        0.22431925150565063
+      ],
+      "vision_frames": 51,
+      "vision_valid_frames": 49,
+      "recoveries": 0
+    },
+    {
+      "seed": 620044,
+      "success": true,
+      "steps": 48,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        4.467644976102747e-05,
+        -0.0017220182344317436,
+        -0.0009645192185416818
+      ],
+      "vision_xy_mm": 1.7225976851484126,
+      "vision_z_mm": -0.9645192185416818,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014084904093559268,
+      "object_pos": [
+        0.299091466126358,
+        0.16405557147629393,
+        0.22428344790592164
+      ],
+      "vision_frames": 49,
+      "vision_valid_frames": 47,
+      "recoveries": 0
+    },
+    {
+      "seed": 620045,
+      "success": true,
+      "steps": 34,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0008584112511016428,
+        0.002638957230374217,
+        -0.0069367666728794575
+      ],
+      "vision_xy_mm": 2.7750612857669013,
+      "vision_z_mm": -6.9367666728794575,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.009977049456478268,
+      "object_pos": [
+        0.29820945359789375,
+        0.14018493711487706,
+        0.2241299718464437
+      ],
+      "vision_frames": 35,
+      "vision_valid_frames": 33,
+      "recoveries": 0
+    },
+    {
+      "seed": 620046,
+      "success": true,
+      "steps": 42,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.003192249918356538,
+        -0.0057120295241475105,
+        -0.0017535170773044229
+      ],
+      "vision_xy_mm": 6.543526635231201,
+      "vision_z_mm": -1.7535170773044229,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014873155773518065,
+      "object_pos": [
+        0.30623161671623317,
+        0.163504729385119,
+        0.2525268234842963
+      ],
+      "vision_frames": 43,
+      "vision_valid_frames": 42,
+      "recoveries": 0
+    },
+    {
+      "seed": 620047,
+      "success": true,
+      "steps": 34,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0076886494643986225,
+        0.004793643020093441,
+        -0.002587325870990753
+      ],
+      "vision_xy_mm": 9.060592916056201,
+      "vision_z_mm": -2.587325870990753,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.010891904478084139,
+      "object_pos": [
+        0.2930246158144465,
+        0.14163473858007775,
+        0.2536486483178434
+      ],
+      "vision_frames": 35,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620048,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0009959060698747635,
+        -0.0074738007970154285,
+        -0.001887874212116003
+      ],
+      "vision_xy_mm": 7.539862548712798,
+      "vision_z_mm": -1.887874212116003,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011983226043398066,
+      "object_pos": [
+        0.30006733868249313,
+        0.16198303684000903,
+        0.25795661775179685
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 45,
+      "recoveries": 0
+    },
+    {
+      "seed": 620049,
+      "success": true,
+      "steps": 32,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006553471088409424,
+        0.004430456552654505,
+        -0.00433826120570302
+      ],
+      "vision_xy_mm": 7.910558044258158,
+      "vision_z_mm": -4.33826120570302,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.009076223254825225,
+      "object_pos": [
+        0.293666730934105,
+        0.14349865156214436,
+        0.2554992218643793
+      ],
+      "vision_frames": 33,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620050,
+      "success": true,
+      "steps": 42,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0003867328050546348,
+        -0.004504673648625612,
+        -0.0014133393997326493
+      ],
+      "vision_xy_mm": 4.521243959700406,
+      "vision_z_mm": -1.4133393997326493,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013519587941498669,
+      "object_pos": [
+        0.30132329529193946,
+        0.16345467010663015,
+        0.2512904889595729
+      ],
+      "vision_frames": 43,
+      "vision_valid_frames": 42,
+      "recoveries": 0
+    },
+    {
+      "seed": 620051,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0010424667270854115,
+        -0.008771595545113087,
+        -0.001642877352423966
+      ],
+      "vision_xy_mm": 8.833324701613085,
+      "vision_z_mm": -1.642877352423966,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013728692255836254,
+      "object_pos": [
+        0.30032920248708084,
+        0.16372474468898995,
+        0.2578345118135681
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 45,
+      "recoveries": 0
+    },
+    {
+      "seed": 620052,
+      "success": true,
+      "steps": 35,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007614010013639927,
+        0.004858784377574921,
+        -0.001765027642250061
+      ],
+      "vision_xy_mm": 9.032216456417283,
+      "vision_z_mm": -1.765027642250061,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012326189045935196,
+      "object_pos": [
+        0.2908343823003778,
+        0.141758253305245,
+        0.24917345021288725
+      ],
+      "vision_frames": 36,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620053,
+      "success": true,
+      "steps": 48,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003982116933912039,
+        0.013378651812672615,
+        0.002734837122261524
+      ],
+      "vision_xy_mm": 13.958709811443079,
+      "vision_z_mm": 2.734837122261524,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.016393405134645024,
+      "object_pos": [
+        0.2956401810264751,
+        0.13419697147927973,
+        0.2406339097612809
+      ],
+      "vision_frames": 49,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620054,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004275164566934109,
+        -0.004654008895158768,
+        -0.0013926433166489005
+      ],
+      "vision_xy_mm": 6.3195593889594734,
+      "vision_z_mm": -1.3926433166489005,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012727968998890867,
+      "object_pos": [
+        0.2960087355635203,
+        0.16208598374294866,
+        0.2503804520844798
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620055,
+      "success": true,
+      "steps": 32,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.008208372630178928,
+        0.014511228539049625,
+        -0.003264910075813532
+      ],
+      "vision_xy_mm": 16.67192655179355,
+      "vision_z_mm": -3.264910075813532,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.010215038190752718,
+      "object_pos": [
+        0.29334273055236065,
+        0.14225224105046727,
+        0.25513962717278965
+      ],
+      "vision_frames": 33,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620056,
+      "success": true,
+      "steps": 47,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.010926302522420883,
+        0.011627692729234695,
+        0.002129016211256385
+      ],
+      "vision_xy_mm": 15.95579283573707,
+      "vision_z_mm": 2.129016211256385,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.016359934133091836,
+      "object_pos": [
+        0.2854116300452938,
+        0.14259548064330108,
+        0.2375195332452003
+      ],
+      "vision_frames": 48,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620057,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.000932268681935966,
+        -0.009317689575254917,
+        -0.0012356023071333766
+      ],
+      "vision_xy_mm": 9.364211868391957,
+      "vision_z_mm": -1.2356023071333766,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013558730490126248,
+      "object_pos": [
+        0.30072467783898704,
+        0.16353935059497168,
+        0.2580031728516028
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620058,
+      "success": true,
+      "steps": 41,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006516666617244482,
+        0.01324604731053114,
+        0.002307441784068942
+      ],
+      "vision_xy_mm": 14.762273305732348,
+      "vision_z_mm": 2.307441784068942,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.018951916562690716,
+      "object_pos": [
+        0.2864799578058992,
+        0.13671905122105635,
+        0.23683389462504437
+      ],
+      "vision_frames": 42,
+      "vision_valid_frames": 25,
+      "recoveries": 0
+    },
+    {
+      "seed": 620059,
+      "success": true,
+      "steps": 36,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0067244707606732845,
+        0.004387855064123869,
+        -0.0027103631291538477
+      ],
+      "vision_xy_mm": 8.029432051827042,
+      "vision_z_mm": -2.7103631291538477,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012550119770142214,
+      "object_pos": [
+        0.2915629736090537,
+        0.14070903170151838,
+        0.2544288314894437
+      ],
+      "vision_frames": 37,
+      "vision_valid_frames": 25,
+      "recoveries": 0
+    },
+    {
+      "seed": 620060,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0011244555935263634,
+        -0.006569677963852882,
+        -0.0007617921219207346
+      ],
+      "vision_xy_mm": 6.665213344713497,
+      "vision_z_mm": -0.7617921219207346,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014608123854853725,
+      "object_pos": [
+        0.3067370229965472,
+        0.1629618595773423,
+        0.25374004973288394
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 27,
+      "recoveries": 0
+    },
+    {
+      "seed": 620061,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004563839174807072,
+        0.01008873712271452,
+        0.001218000310473144
+      ],
+      "vision_xy_mm": 11.072996195463165,
+      "vision_z_mm": 1.218000310473144,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013864778783685753,
+      "object_pos": [
+        0.29257285719777926,
+        0.13829232557183266,
+        0.24548387406346844
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620062,
+      "success": true,
+      "steps": 50,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.001915216795168817,
+        -0.0008262094343081117,
+        -0.0029031180310994387
+      ],
+      "vision_xy_mm": 2.085827749800171,
+      "vision_z_mm": -2.9031180310994387,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014457935564505366,
+      "object_pos": [
+        0.30545157302008535,
+        0.16339075249543752,
+        0.2240764741324827
+      ],
+      "vision_frames": 51,
+      "vision_valid_frames": 49,
+      "recoveries": 0
+    },
+    {
+      "seed": 620063,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0008197725983336568,
+        -0.006713059265166521,
+        -0.0033488578628748655
+      ],
+      "vision_xy_mm": 6.76292775435438,
+      "vision_z_mm": -3.3488578628748655,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013747562908146667,
+      "object_pos": [
+        0.29966641005437084,
+        0.16374351496749012,
+        0.22432400195060323
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 44,
+      "recoveries": 0
+    },
+    {
+      "seed": 620064,
+      "success": true,
+      "steps": 48,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0002177470305468887,
+        -0.00748051330447197,
+        -0.0020075940992683172
+      ],
+      "vision_xy_mm": 7.483681785571466,
+      "vision_z_mm": -2.0075940992683172,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.0123990316286985,
+      "object_pos": [
+        0.30187154549705036,
+        0.1622569695594766,
+        0.24973908686004181
+      ],
+      "vision_frames": 49,
+      "vision_valid_frames": 48,
+      "recoveries": 0
+    },
+    {
+      "seed": 620065,
+      "success": true,
+      "steps": 48,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003816545009613037,
+        0.01045413501560688,
+        0.0017638524295762181
+      ],
+      "vision_xy_mm": 11.129014095369815,
+      "vision_z_mm": 1.7638524295762181,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013863399093530316,
+      "object_pos": [
+        0.29644914223124486,
+        0.1365990581102458,
+        0.24253544541299496
+      ],
+      "vision_frames": 49,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620066,
+      "success": true,
+      "steps": 40,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00965193472802639,
+        0.008857791312038898,
+        0.0013735713437199593
+      ],
+      "vision_xy_mm": 13.10039354071906,
+      "vision_z_mm": 1.3735713437199593,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01606568479186056,
+      "object_pos": [
+        0.28419795525543456,
+        0.14710144696060742,
+        0.24204930722712986
+      ],
+      "vision_frames": 41,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620067,
+      "success": true,
+      "steps": 48,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004434729926288128,
+        -0.006930795963853598,
+        -0.0016765217296779156
+      ],
+      "vision_xy_mm": 8.228168824938196,
+      "vision_z_mm": -1.6765217296779156,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01292248335941724,
+      "object_pos": [
+        0.2965050678517198,
+        0.1624409013119361,
+        0.25429864732133023
+      ],
+      "vision_frames": 49,
+      "vision_valid_frames": 48,
+      "recoveries": 0
+    },
+    {
+      "seed": 620068,
+      "success": true,
+      "steps": 31,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.001964671304449439,
+        0.005642410833388567,
+        -0.010701810009777546
+      ],
+      "vision_xy_mm": 5.974674329808088,
+      "vision_z_mm": -10.701810009777546,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.010584349683832822,
+      "object_pos": [
+        0.2995702698773524,
+        0.1394243775478064,
+        0.255640432657526
+      ],
+      "vision_frames": 32,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620069,
+      "success": true,
+      "steps": 34,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.005405786447227001,
+        0.0068832943215966225,
+        -0.0014691695105284452
+      ],
+      "vision_xy_mm": 8.75227215246118,
+      "vision_z_mm": -1.4691695105284452,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011968674376116558,
+      "object_pos": [
+        0.29432052025700983,
+        0.13946469382644844,
+        0.24758522019581083
+      ],
+      "vision_frames": 35,
+      "vision_valid_frames": 21,
+      "recoveries": 0
+    },
+    {
+      "seed": 620070,
+      "success": true,
+      "steps": 42,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.00024703110102564096,
+        -0.004032321274280548,
+        -0.0012526195496320724
+      ],
+      "vision_xy_mm": 4.0398810903155855,
+      "vision_z_mm": -1.2526195496320724,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013552401568257131,
+      "object_pos": [
+        0.3012361476457447,
+        0.16349590779700343,
+        0.2503479546997237
+      ],
+      "vision_frames": 43,
+      "vision_valid_frames": 42,
+      "recoveries": 0
+    },
+    {
+      "seed": 620071,
+      "success": true,
+      "steps": 47,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.002747343387454748,
+        -0.008754229173064232,
+        -0.002261198591440916
+      ],
+      "vision_xy_mm": 9.175207033256536,
+      "vision_z_mm": -2.261198591440916,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012520461443761748,
+      "object_pos": [
+        0.2984974042972088,
+        0.16242997027022502,
+        0.25009860926801986
+      ],
+      "vision_frames": 48,
+      "vision_valid_frames": 47,
+      "recoveries": 0
+    },
+    {
+      "seed": 620072,
+      "success": true,
+      "steps": 50,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006795008201152086,
+        -0.010195571929216385,
+        -0.001764701446518302
+      ],
+      "vision_xy_mm": 12.252421124722623,
+      "vision_z_mm": -1.764701446518302,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012884270483256874,
+      "object_pos": [
+        0.2930497105097429,
+        0.16084886638720128,
+        0.25277588763311476
+      ],
+      "vision_frames": 51,
+      "vision_valid_frames": 32,
+      "recoveries": 0
+    },
+    {
+      "seed": 620073,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0011181149166077375,
+        -0.006958294194191694,
+        -0.00028476244187913835
+      ],
+      "vision_xy_mm": 7.047555537891317,
+      "vision_z_mm": -0.28476244187913835,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012960608188177883,
+      "object_pos": [
+        0.3002935786346414,
+        0.16295728274727173,
+        0.24967156199106139
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 43,
+      "recoveries": 0
+    },
+    {
+      "seed": 620074,
+      "success": true,
+      "steps": 30,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003592586377635598,
+        0.0069918325170874596,
+        -0.006013880949467421
+      ],
+      "vision_xy_mm": 7.8608141326312015,
+      "vision_z_mm": -6.013880949467421,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01117755803794015,
+      "object_pos": [
+        0.29661034840285766,
+        0.13934879979807388,
+        0.2570695994868576
+      ],
+      "vision_frames": 31,
+      "vision_valid_frames": 30,
+      "recoveries": 0
+    },
+    {
+      "seed": 620075,
+      "success": true,
+      "steps": 37,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006344443652778864,
+        0.01618293672800064,
+        -0.0008633649558760226
+      ],
+      "vision_xy_mm": 17.382157702821537,
+      "vision_z_mm": -0.8633649558760226,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013206555992054144,
+      "object_pos": [
+        0.2947383690604937,
+        0.13788685172931117,
+        0.25151416086149536
+      ],
+      "vision_frames": 38,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620076,
+      "success": true,
+      "steps": 40,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0033406182192265987,
+        -0.00848383642733097,
+        -0.0024971088860183954
+      ],
+      "vision_xy_mm": 9.117851205867346,
+      "vision_z_mm": -2.4971088860183954,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01401763909668815,
+      "object_pos": [
+        0.3058986953278555,
+        0.16271611573060482,
+        0.25663804384556016
+      ],
+      "vision_frames": 41,
+      "vision_valid_frames": 40,
+      "recoveries": 0
+    },
+    {
+      "seed": 620077,
+      "success": true,
+      "steps": 42,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004248294048011303,
+        0.00693177105858922,
+        0.001351987011730671
+      ],
+      "vision_xy_mm": 8.13003396838312,
+      "vision_z_mm": 1.351987011730671,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012517907445994313,
+      "object_pos": [
+        0.30405324626858765,
+        0.13815647005691883,
+        0.25450320747311717
+      ],
+      "vision_frames": 43,
+      "vision_valid_frames": 42,
+      "recoveries": 0
+    },
+    {
+      "seed": 620078,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0001073357489076443,
+        -0.006459549069404602,
+        -0.0008985077729448676
+      ],
+      "vision_xy_mm": 6.460440785506777,
+      "vision_z_mm": -0.8985077729448676,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012983942244887314,
+      "object_pos": [
+        0.302383940248516,
+        0.1627632121783693,
+        0.25361510532723447
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 43,
+      "recoveries": 0
+    },
+    {
+      "seed": 620079,
+      "success": true,
+      "steps": 50,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004794222302734852,
+        -0.005267010536044836,
+        -0.002954936120659113
+      ],
+      "vision_xy_mm": 7.122216472057527,
+      "vision_z_mm": -2.954936120659113,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012383828312483724,
+      "object_pos": [
+        0.2934170883850004,
+        0.1604892553759634,
+        0.22431856079137785
+      ],
+      "vision_frames": 51,
+      "vision_valid_frames": 49,
+      "recoveries": 0
+    },
+    {
+      "seed": 620080,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0005948765319772065,
+        -0.006656936835497618,
+        -0.00730140833184123
+      ],
+      "vision_xy_mm": 6.683463631987704,
+      "vision_z_mm": -7.30140833184123,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011217752244547387,
+      "object_pos": [
+        0.30064987088575307,
+        0.16119891214591392,
+        0.22404896093595839
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 45,
+      "recoveries": 0
+    },
+    {
+      "seed": 620081,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0010280872229486704,
+        -0.006968112662434578,
+        -0.0015773680061101913
+      ],
+      "vision_xy_mm": 7.043547218154459,
+      "vision_z_mm": -1.5773680061101913,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013802972281517103,
+      "object_pos": [
+        0.299175366850576,
+        0.16377831716768054,
+        0.2503344995745278
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620082,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00792270340025425,
+        0.0007284983294084668,
+        -0.0012080954620614648
+      ],
+      "vision_xy_mm": 7.956125877859851,
+      "vision_z_mm": -1.2080954620614648,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01291410791726105,
+      "object_pos": [
+        0.2934005727133813,
+        0.1611005289417801,
+        0.25272728925986654
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620083,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006088871508836746,
+        0.012888255529105663,
+        0.0012681266525760293
+      ],
+      "vision_xy_mm": 14.254174365239349,
+      "vision_z_mm": 1.2681266525760293,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014988133283764889,
+      "object_pos": [
+        0.2940146709862066,
+        0.13625882188716906,
+        0.25146049233553525
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 29,
+      "recoveries": 0
+    },
+    {
+      "seed": 620084,
+      "success": true,
+      "steps": 32,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0009572794660925865,
+        0.011156371794641018,
+        -0.006378070916980505
+      ],
+      "vision_xy_mm": 11.197366458076834,
+      "vision_z_mm": -6.378070916980505,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012569835924325638,
+      "object_pos": [
+        0.29806231541835565,
+        0.13758041250175654,
+        0.25917996060117954
+      ],
+      "vision_frames": 33,
+      "vision_valid_frames": 32,
+      "recoveries": 0
+    },
+    {
+      "seed": 620085,
+      "success": true,
+      "steps": 39,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00860610418021679,
+        0.005071145948022604,
+        0.0009591668494977057
+      ],
+      "vision_xy_mm": 9.989071547791164,
+      "vision_z_mm": 0.9591668494977057,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.015485781209309138,
+      "object_pos": [
+        0.28665463584847223,
+        0.1421443857448504,
+        0.24367381776736824
+      ],
+      "vision_frames": 40,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620086,
+      "success": true,
+      "steps": 48,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0005405491683632135,
+        -0.006302392575889826,
+        -0.004545966628938913
+      ],
+      "vision_xy_mm": 6.325531249156023,
+      "vision_z_mm": -4.545966628938913,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013998000452399052,
+      "object_pos": [
+        0.300170001671876,
+        0.16399696810373315,
+        0.22419257450872582
+      ],
+      "vision_frames": 49,
+      "vision_valid_frames": 47,
+      "recoveries": 0
+    },
+    {
+      "seed": 620087,
+      "success": true,
+      "steps": 31,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003535614348948002,
+        0.005719148088246584,
+        -0.006526272743940353
+      ],
+      "vision_xy_mm": 6.723780460409275,
+      "vision_z_mm": -6.526272743940353,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.010702713694249685,
+      "object_pos": [
+        0.29690558906421705,
+        0.13975438135681467,
+        0.2569353036135367
+      ],
+      "vision_frames": 32,
+      "vision_valid_frames": 31,
+      "recoveries": 0
+    },
+    {
+      "seed": 620088,
+      "success": true,
+      "steps": 30,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0023742958437651396,
+        0.0009844225132837892,
+        -0.006425445433706045
+      ],
+      "vision_xy_mm": 2.5702856725236574,
+      "vision_z_mm": -6.425445433706045,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.008713750212795567,
+      "object_pos": [
+        0.2979060905033813,
+        0.14154157309005008,
+        0.22428553970161882
+      ],
+      "vision_frames": 31,
+      "vision_valid_frames": 29,
+      "recoveries": 0
+    },
+    {
+      "seed": 620089,
+      "success": true,
+      "steps": 38,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.010998118668794632,
+        0.001601346884854138,
+        -0.00026089244056493044
+      ],
+      "vision_xy_mm": 11.114086831517966,
+      "vision_z_mm": -0.26089244056493044,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014967335867982295,
+      "object_pos": [
+        0.28503402964587976,
+        0.14979782595472269,
+        0.2485876672240758
+      ],
+      "vision_frames": 39,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620090,
+      "success": true,
+      "steps": 49,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0028607104904949665,
+        -0.006764383986592293,
+        -0.005102558061480522
+      ],
+      "vision_xy_mm": 7.3444234102136425,
+      "vision_z_mm": -5.102558061480522,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012949315816234177,
+      "object_pos": [
+        0.2972821849100736,
+        0.16266089496226632,
+        0.22412955692558864
+      ],
+      "vision_frames": 50,
+      "vision_valid_frames": 48,
+      "recoveries": 0
+    },
+    {
+      "seed": 620091,
+      "success": true,
+      "steps": 51,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003267053747549653,
+        -0.007400013040751219,
+        -0.0031659184023737907
+      ],
+      "vision_xy_mm": 8.089118196235379,
+      "vision_z_mm": -3.1659184023737907,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.0132524820670405,
+      "object_pos": [
+        0.2954667625000607,
+        0.16245303331346922,
+        0.22433815621941616
+      ],
+      "vision_frames": 52,
+      "vision_valid_frames": 50,
+      "recoveries": 0
+    },
+    {
+      "seed": 620092,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0028749420307576656,
+        -0.0028091573622077703,
+        -0.0003526110085658729
+      ],
+      "vision_xy_mm": 4.019534396651324,
+      "vision_z_mm": -0.3526110085658729,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013841989288602535,
+      "object_pos": [
+        0.30556838361164984,
+        0.16267255978164225,
+        0.2564308441076007
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 28,
+      "recoveries": 0
+    },
+    {
+      "seed": 620093,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.00042303692316636443,
+        -0.004445977509021759,
+        -0.0023926841095089912
+      ],
+      "vision_xy_mm": 4.466058245151913,
+      "vision_z_mm": -2.3926841095089912,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014627733212220523,
+      "object_pos": [
+        0.30234643613852547,
+        0.16443831071752235,
+        0.25469935044070935
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620094,
+      "success": true,
+      "steps": 47,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.002502633025869727,
+        0.003057754598557949,
+        -0.0022522355429828167
+      ],
+      "vision_xy_mm": 3.951333350550944,
+      "vision_z_mm": -2.2522355429828167,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014269007646307128,
+      "object_pos": [
+        0.3052465497623795,
+        0.1632694496796682,
+        0.22433609532151264
+      ],
+      "vision_frames": 48,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620095,
+      "success": true,
+      "steps": 37,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0014063292182981968,
+        0.011617185547947884,
+        -0.0054672155529260635
+      ],
+      "vision_xy_mm": 11.701998202259663,
+      "vision_z_mm": -5.4672155529260635,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011869673982483201,
+      "object_pos": [
+        0.2961743398977195,
+        0.1387637423831483,
+        0.2243093402423792
+      ],
+      "vision_frames": 38,
+      "vision_valid_frames": 36,
+      "recoveries": 0
+    },
+    {
+      "seed": 620096,
+      "success": true,
+      "steps": 41,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006749467458575964,
+        0.007027496118098497,
+        0.001001233235001564
+      ],
+      "vision_xy_mm": 9.743767888464161,
+      "vision_z_mm": 1.001233235001564,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01467619885431888,
+      "object_pos": [
+        0.2894530808908759,
+        0.139794447094003,
+        0.24057264671845735
+      ],
+      "vision_frames": 42,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620097,
+      "success": true,
+      "steps": 50,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003990785218775272,
+        -0.00915423221886158,
+        -0.0022732019424438477
+      ],
+      "vision_xy_mm": 9.986307334507515,
+      "vision_z_mm": -2.2732019424438477,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013106989805549083,
+      "object_pos": [
+        0.2971510431032088,
+        0.16279361662560643,
+        0.2578482345720652
+      ],
+      "vision_frames": 51,
+      "vision_valid_frames": 50,
+      "recoveries": 0
+    },
+    {
+      "seed": 620098,
+      "success": true,
+      "steps": 49,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003762571606785059,
+        -0.00883419904857874,
+        -0.0017563505098223686
+      ],
+      "vision_xy_mm": 9.60208404077441,
+      "vision_z_mm": -1.7563505098223686,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012303105135376038,
+      "object_pos": [
+        0.2975868062167782,
+        0.16206411587049527,
+        0.25439936050457773
+      ],
+      "vision_frames": 50,
+      "vision_valid_frames": 49,
+      "recoveries": 0
+    },
+    {
+      "seed": 620099,
+      "success": true,
+      "steps": 34,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00980378407984972,
+        9.036288247443736e-05,
+        -0.0035937896464020014
+      ],
+      "vision_xy_mm": 9.804200514822407,
+      "vision_z_mm": -3.5937896464020014,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.015745718710881217,
+      "object_pos": [
+        0.2844667263302084,
+        0.14742219728808528,
+        0.24833729254950493
+      ],
+      "vision_frames": 35,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620100,
+      "success": true,
+      "steps": 41,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.00013135156768839806,
+        -0.009220175445079803,
+        -0.004643606953322887
+      ],
+      "vision_xy_mm": 9.221111021584479,
+      "vision_z_mm": -4.643606953322887,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013689839100302673,
+      "object_pos": [
+        0.3025219999999183,
+        0.1634555271391569,
+        0.2526642659194439
+      ],
+      "vision_frames": 42,
+      "vision_valid_frames": 41,
+      "recoveries": 0
+    },
+    {
+      "seed": 620101,
+      "success": true,
+      "steps": 42,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0004744000907521695,
+        -0.0036356872878968716,
+        -0.0009862619917839766
+      ],
+      "vision_xy_mm": 3.6665075346275473,
+      "vision_z_mm": -0.9862619917839766,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01279896718919346,
+      "object_pos": [
+        0.3010916826462407,
+        0.16275232489038557,
+        0.25038825520207575
+      ],
+      "vision_frames": 43,
+      "vision_valid_frames": 42,
+      "recoveries": 0
+    },
+    {
+      "seed": 620102,
+      "success": true,
+      "steps": 35,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.010153423994779587,
+        0.00173852127045393,
+        -0.002602590946480632
+      ],
+      "vision_xy_mm": 10.301188039521781,
+      "vision_z_mm": -2.602590946480632,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014212236945062254,
+      "object_pos": [
+        0.28600687869711794,
+        0.14751399211879346,
+        0.25213132541084654
+      ],
+      "vision_frames": 36,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620103,
+      "success": true,
+      "steps": 33,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.01121985912322998,
+        0.009825951419770718,
+        -0.0038139126263558865
+      ],
+      "vision_xy_mm": 14.914240176717726,
+      "vision_z_mm": -3.8139126263558865,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014771140255309581,
+      "object_pos": [
+        0.2853098419338544,
+        0.14845538340236658,
+        0.24784255080754528
+      ],
+      "vision_frames": 34,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620104,
+      "success": true,
+      "steps": 53,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0030237799510359764,
+        -0.008861877024173737,
+        -0.0021246657706797123
+      ],
+      "vision_xy_mm": 9.36355218834527,
+      "vision_z_mm": -2.1246657706797123,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013151210618163059,
+      "object_pos": [
+        0.29730741887239337,
+        0.1628726200749708,
+        0.2599884915391882
+      ],
+      "vision_frames": 54,
+      "vision_valid_frames": 53,
+      "recoveries": 0
+    },
+    {
+      "seed": 620105,
+      "success": true,
+      "steps": 41,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.002022995613515377,
+        0.01132991537451744,
+        0.0005904358113184571
+      ],
+      "vision_xy_mm": 11.509104815146534,
+      "vision_z_mm": 0.5904358113184571,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012857833339101612,
+      "object_pos": [
+        0.2974617168517494,
+        0.13739519945277118,
+        0.24429807897437894
+      ],
+      "vision_frames": 42,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620106,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007307310588657856,
+        -0.0069527821615338326,
+        -0.003225594060495496
+      ],
+      "vision_xy_mm": 10.086524070503886,
+      "vision_z_mm": -3.225594060495496,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012532683590562591,
+      "object_pos": [
+        0.2927717754557306,
+        0.16023820921444654,
+        0.25855878408716065
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 45,
+      "recoveries": 0
+    },
+    {
+      "seed": 620107,
+      "success": true,
+      "steps": 40,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.010039529763162136,
+        0.00539499381557107,
+        0.0013083306839689612
+      ],
+      "vision_xy_mm": 11.397285472228397,
+      "vision_z_mm": 1.3083306839689612,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.016180260163932956,
+      "object_pos": [
+        0.2839749831309267,
+        0.14776400954419044,
+        0.2383888761814758
+      ],
+      "vision_frames": 41,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620108,
+      "success": true,
+      "steps": 40,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007510126102715731,
+        0.0036991992965340614,
+        -0.0008593283127993345
+      ],
+      "vision_xy_mm": 8.37174232249,
+      "vision_z_mm": -0.8593283127993345,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.009265396254887311,
+      "object_pos": [
+        0.29392697468461954,
+        0.14300243390321835,
+        0.2526951402762476
+      ],
+      "vision_frames": 41,
+      "vision_valid_frames": 40,
+      "recoveries": 0
+    },
+    {
+      "seed": 620109,
+      "success": true,
+      "steps": 48,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0019457116723060608,
+        -0.004405885934829712,
+        -0.0024797541555017233
+      ],
+      "vision_xy_mm": 4.816391261357234,
+      "vision_z_mm": -2.4797541555017233,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014374898749792505,
+      "object_pos": [
+        0.3045155565479021,
+        0.16364725111989534,
+        0.22432015053265925
+      ],
+      "vision_frames": 49,
+      "vision_valid_frames": 47,
+      "recoveries": 0
+    },
+    {
+      "seed": 620110,
+      "success": true,
+      "steps": 37,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.009324769489467144,
+        0.0023421768564730883,
+        -0.001373941428028047
+      ],
+      "vision_xy_mm": 9.614422419401777,
+      "vision_z_mm": -1.373941428028047,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.016818510657182033,
+      "object_pos": [
+        0.2840604435650182,
+        0.14463410386032527,
+        0.2449606072490657
+      ],
+      "vision_frames": 38,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620111,
+      "success": true,
+      "steps": 50,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.010428735055029392,
+        -0.0019399725133553147,
+        -0.001531154033727944
+      ],
+      "vision_xy_mm": 10.607639143587654,
+      "vision_z_mm": -1.531154033727944,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011779917743827683,
+      "object_pos": [
+        0.2911919431717484,
+        0.15782205835836302,
+        0.25345101934884884
+      ],
+      "vision_frames": 51,
+      "vision_valid_frames": 50,
+      "recoveries": 0
+    },
+    {
+      "seed": 620112,
+      "success": true,
+      "steps": 135,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.004744421690702438,
+        0.010762128047645092,
+        0.002806382719427347
+      ],
+      "vision_xy_mm": 11.761502339969878,
+      "vision_z_mm": 2.806382719427347,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.020190438733093487,
+      "object_pos": [
+        0.3154321061439295,
+        0.13698063303392619,
+        0.24614604863727949
+      ],
+      "vision_frames": 136,
+      "vision_valid_frames": 133,
+      "recoveries": 1
+    },
+    {
+      "seed": 620113,
+      "success": true,
+      "steps": 34,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.009605835191905499,
+        -0.0007385217468254268,
+        -0.0038124057464301586
+      ],
+      "vision_xy_mm": 9.634183105203276,
+      "vision_z_mm": -3.8124057464301586,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.015586589051721868,
+      "object_pos": [
+        0.28445218313376097,
+        0.1489012966910264,
+        0.24953360326811078
+      ],
+      "vision_frames": 35,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620114,
+      "success": true,
+      "steps": 47,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0036666730884462595,
+        0.021739471703767776,
+        0.0027731298469007015
+      ],
+      "vision_xy_mm": 22.046521755062766,
+      "vision_z_mm": 2.7731298469007015,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.02043114134258737,
+      "object_pos": [
+        0.28433456298362875,
+        0.13688414624788425,
+        0.2370389784309136
+      ],
+      "vision_frames": 48,
+      "vision_valid_frames": 29,
+      "recoveries": 0
+    },
+    {
+      "seed": 620115,
+      "success": true,
+      "steps": 47,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.005305550992488861,
+        -0.005421374924480915,
+        0.0006234476459212601
+      ],
+      "vision_xy_mm": 7.58552420111425,
+      "vision_z_mm": 0.6234476459212601,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011462944068670279,
+      "object_pos": [
+        0.29657966976718336,
+        0.16094076906894317,
+        0.25446637465091354
+      ],
+      "vision_frames": 48,
+      "vision_valid_frames": 47,
+      "recoveries": 0
+    },
+    {
+      "seed": 620116,
+      "success": true,
+      "steps": 33,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.010031826794147491,
+        0.0025837670546025038,
+        -0.003939208574593067
+      ],
+      "vision_xy_mm": 10.359218166455653,
+      "vision_z_mm": -3.939208574593067,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014491514367983807,
+      "object_pos": [
+        0.28604865147769754,
+        0.14608032359923293,
+        0.24575924636295698
+      ],
+      "vision_frames": 34,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620117,
+      "success": true,
+      "steps": 59,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0010149793233722448,
+        -0.005370080936700106,
+        -0.0023698837030678988
+      ],
+      "vision_xy_mm": 5.465158030064919,
+      "vision_z_mm": -2.3698837030678988,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013236478331625777,
+      "object_pos": [
+        0.2998293086984686,
+        0.16323537770912414,
+        0.22431356123642207
+      ],
+      "vision_frames": 60,
+      "vision_valid_frames": 58,
+      "recoveries": 0
+    },
+    {
+      "seed": 620118,
+      "success": true,
+      "steps": 41,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.009629896841943264,
+        0.014376625418663025,
+        0.00017437887436244637
+      ],
+      "vision_xy_mm": 17.303822456758407,
+      "vision_z_mm": 0.17437887436244637,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011569994318460704,
+      "object_pos": [
+        0.29096075359239937,
+        0.14277803399953362,
+        0.2518105809641336
+      ],
+      "vision_frames": 42,
+      "vision_valid_frames": 41,
+      "recoveries": 0
+    },
+    {
+      "seed": 620119,
+      "success": true,
+      "steps": 51,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0010542696109041572,
+        -0.006499367766082287,
+        -0.002236483618617058
+      ],
+      "vision_xy_mm": 6.584319689327475,
+      "vision_z_mm": -2.236483618617058,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014074895945325594,
+      "object_pos": [
+        0.3017588103586184,
+        0.163964572388518,
+        0.22433554180929866
+      ],
+      "vision_frames": 52,
+      "vision_valid_frames": 50,
+      "recoveries": 0
+    },
+    {
+      "seed": 620120,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0014245964121073484,
+        -0.009169467724859715,
+        -0.0013506170362234116
+      ],
+      "vision_xy_mm": 9.27947268408249,
+      "vision_z_mm": -1.3506170362234116,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014248157988316091,
+      "object_pos": [
+        0.3041086479737046,
+        0.16364291090230337,
+        0.2572743109324288
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620121,
+      "success": true,
+      "steps": 44,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.00014400023792404681,
+        -0.008852297440171242,
+        -0.0016119099454954267
+      ],
+      "vision_xy_mm": 8.853468587948143,
+      "vision_z_mm": -1.6119099454954267,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013447543790925302,
+      "object_pos": [
+        0.3030621219376607,
+        0.16309426757202367,
+        0.2560306682989027
+      ],
+      "vision_frames": 45,
+      "vision_valid_frames": 44,
+      "recoveries": 0
+    },
+    {
+      "seed": 620122,
+      "success": true,
+      "steps": 38,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004451770801097155,
+        0.008305694907903671,
+        -0.0008516963571310043
+      ],
+      "vision_xy_mm": 9.423525410836337,
+      "vision_z_mm": -0.8516963571310043,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012939927970388744,
+      "object_pos": [
+        0.29619404754426437,
+        0.13763244317645845,
+        0.24681569670712372
+      ],
+      "vision_frames": 39,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620123,
+      "success": true,
+      "steps": 36,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0013853482669219375,
+        0.02564905397593975,
+        -0.0004805151547770947
+      ],
+      "vision_xy_mm": 25.686439217636497,
+      "vision_z_mm": -0.4805151547770947,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013370983434800565,
+      "object_pos": [
+        0.30228353302030847,
+        0.13682545351980296,
+        0.250222427351946
+      ],
+      "vision_frames": 37,
+      "vision_valid_frames": 36,
+      "recoveries": 0
+    },
+    {
+      "seed": 620124,
+      "success": true,
+      "steps": 49,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.008480164222419262,
+        0.0021392006892710924,
+        -0.00125609349925071
+      ],
+      "vision_xy_mm": 8.74581984882936,
+      "vision_z_mm": -1.25609349925071,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011210155480036222,
+      "object_pos": [
+        0.2913307062512966,
+        0.1571071043178835,
+        0.2539125056848341
+      ],
+      "vision_frames": 50,
+      "vision_valid_frames": 49,
+      "recoveries": 0
+    },
+    {
+      "seed": 620125,
+      "success": true,
+      "steps": 34,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0007011345005594194,
+        0.008640781044960022,
+        -0.0034967344254255295
+      ],
+      "vision_xy_mm": 8.66918027582857,
+      "vision_z_mm": -3.4967344254255295,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014450053636284956,
+      "object_pos": [
+        0.29077476160076815,
+        0.1388779935906847,
+        0.2450965489839928
+      ],
+      "vision_frames": 35,
+      "vision_valid_frames": 25,
+      "recoveries": 0
+    },
+    {
+      "seed": 620126,
+      "success": true,
+      "steps": 38,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006606441456824541,
+        0.0053792670369148254,
+        -0.00041152542689815164
+      ],
+      "vision_xy_mm": 8.519482529877525,
+      "vision_z_mm": -0.41152542689815164,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.009999396087979336,
+      "object_pos": [
+        0.2989162584635946,
+        0.14005950572624448,
+        0.25581109544481023
+      ],
+      "vision_frames": 39,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620127,
+      "success": true,
+      "steps": 31,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.00010186960571445525,
+        0.003889783751219511,
+        -0.00785080250352621
+      ],
+      "vision_xy_mm": 3.89111745489901,
+      "vision_z_mm": -7.850802503526211,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01111490053516131,
+      "object_pos": [
+        0.30052948553976244,
+        0.1388977182989391,
+        0.22420883208391063
+      ],
+      "vision_frames": 32,
+      "vision_valid_frames": 30,
+      "recoveries": 0
+    },
+    {
+      "seed": 620128,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0003021584125235677,
+        -0.007580976467579603,
+        -0.00697045773267746
+      ],
+      "vision_xy_mm": 7.586995710309482,
+      "vision_z_mm": -6.97045773267746,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012501617257947843,
+      "object_pos": [
+        0.3004554117345793,
+        0.1624933195835305,
+        0.22403892454842858
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 44,
+      "recoveries": 0
+    },
+    {
+      "seed": 620129,
+      "success": true,
+      "steps": 42,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.002652964321896434,
+        -0.004018901381641626,
+        -0.0011800522916018963
+      ],
+      "vision_xy_mm": 4.8155776401815364,
+      "vision_z_mm": -1.1800522916018963,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01472883351686333,
+      "object_pos": [
+        0.3052753509915085,
+        0.16375169839270287,
+        0.2539041170222557
+      ],
+      "vision_frames": 43,
+      "vision_valid_frames": 42,
+      "recoveries": 0
+    },
+    {
+      "seed": 620130,
+      "success": true,
+      "steps": 33,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.009834283962845802,
+        0.000474203669000417,
+        -0.005484039429575205
+      ],
+      "vision_xy_mm": 9.845710242617319,
+      "vision_z_mm": -5.484039429575205,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014555116572573515,
+      "object_pos": [
+        0.28574636660060854,
+        0.14705290764363302,
+        0.25458894213207034
+      ],
+      "vision_frames": 34,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620131,
+      "success": true,
+      "steps": 36,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.010152393020689487,
+        -0.002963840262964368,
+        -0.001988735282793641
+      ],
+      "vision_xy_mm": 10.576172897173784,
+      "vision_z_mm": -1.988735282793641,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.017432063537344604,
+      "object_pos": [
+        0.28261676116978923,
+        0.1513037817846067,
+        0.24602756074657467
+      ],
+      "vision_frames": 37,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620132,
+      "success": true,
+      "steps": 32,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00714989984408021,
+        0.015317323617637157,
+        -0.00441008759662509
+      ],
+      "vision_xy_mm": 16.903889214846483,
+      "vision_z_mm": -4.41008759662509,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011616431380631537,
+      "object_pos": [
+        0.2938052874669398,
+        0.14017314828372443,
+        0.2565221380589037
+      ],
+      "vision_frames": 33,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620133,
+      "success": true,
+      "steps": 35,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007137560285627842,
+        0.00790773518383503,
+        -0.0008089061011560261
+      ],
+      "vision_xy_mm": 10.652560376202251,
+      "vision_z_mm": -0.8089061011560261,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01200837856770777,
+      "object_pos": [
+        0.292942064208911,
+        0.14028471831626851,
+        0.24201625699330603
+      ],
+      "vision_frames": 36,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620134,
+      "success": true,
+      "steps": 44,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0007785465568304062,
+        -0.0033721865620464087,
+        -0.0029512722976505756
+      ],
+      "vision_xy_mm": 3.460892507778717,
+      "vision_z_mm": -2.9512722976505756,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01410125193558613,
+      "object_pos": [
+        0.3017590953766857,
+        0.16399110037154313,
+        0.22408211019814994
+      ],
+      "vision_frames": 45,
+      "vision_valid_frames": 43,
+      "recoveries": 0
+    },
+    {
+      "seed": 620135,
+      "success": true,
+      "steps": 35,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007520662620663643,
+        0.0055077411234378815,
+        -0.0018545499769970775
+      ],
+      "vision_xy_mm": 9.321779794473592,
+      "vision_z_mm": -1.8545499769970775,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012504807977836364,
+      "object_pos": [
+        0.2919896842695406,
+        0.1403976531795131,
+        0.24557876034881526
+      ],
+      "vision_frames": 36,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620136,
+      "success": true,
+      "steps": 55,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.005221926141530275,
+        0.007293539587408304,
+        0.001323043368756771
+      ],
+      "vision_xy_mm": 8.970185747279114,
+      "vision_z_mm": 1.323043368756771,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.017020006544824575,
+      "object_pos": [
+        0.28819286266488503,
+        0.13774144662957305,
+        0.23699899406884437
+      ],
+      "vision_frames": 56,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620137,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.008071061223745346,
+        0.021405793726444244,
+        0.00033667960087768734
+      ],
+      "vision_xy_mm": 22.87684493842028,
+      "vision_z_mm": 0.33667960087768734,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014774227002314856,
+      "object_pos": [
+        0.2898835933475925,
+        0.13923263727930302,
+        0.24342875366531547
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620138,
+      "success": true,
+      "steps": 42,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00010625797585817054,
+        -0.007890929467976093,
+        7.75898079155013e-05
+      ],
+      "vision_xy_mm": 7.891644861878096,
+      "vision_z_mm": 0.0775898079155013,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011429879962068446,
+      "object_pos": [
+        0.30187824078645487,
+        0.16127450076479624,
+        0.2542718462646053
+      ],
+      "vision_frames": 43,
+      "vision_valid_frames": 42,
+      "recoveries": 0
+    },
+    {
+      "seed": 620139,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0009279639925807714,
+        -0.008383025415241718,
+        -0.0019716517999768257
+      ],
+      "vision_xy_mm": 8.434229797919608,
+      "vision_z_mm": -1.9716517999768257,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013480352120447658,
+      "object_pos": [
+        0.3030831282656849,
+        0.1631230413162724,
+        0.25110413919161095
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 43,
+      "recoveries": 0
+    },
+    {
+      "seed": 620140,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0001563988480484113,
+        -0.009437238797545433,
+        -0.0016276645474135876
+      ],
+      "vision_xy_mm": 9.438534670252984,
+      "vision_z_mm": -1.6276645474135876,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01323135911457788,
+      "object_pos": [
+        0.30234868567427264,
+        0.16302123418199632,
+        0.2570715510008751
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620141,
+      "success": true,
+      "steps": 51,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0005239652819000185,
+        -0.004002663306891918,
+        -0.003377081360667944
+      ],
+      "vision_xy_mm": 4.0368122528767065,
+      "vision_z_mm": -3.377081360667944,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012892577009154376,
+      "object_pos": [
+        0.30017265690482436,
+        0.16289142084993707,
+        0.22406914562906055
+      ],
+      "vision_frames": 52,
+      "vision_valid_frames": 50,
+      "recoveries": 0
+    },
+    {
+      "seed": 620142,
+      "success": true,
+      "steps": 30,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.005646207835525274,
+        0.002386774169281125,
+        -0.005544823594391346
+      ],
+      "vision_xy_mm": 6.129955453108498,
+      "vision_z_mm": -5.544823594391346,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.008511016082870032,
+      "object_pos": [
+        0.2969889851003873,
+        0.14203939801037743,
+        0.2524501052902101
+      ],
+      "vision_frames": 31,
+      "vision_valid_frames": 30,
+      "recoveries": 0
+    },
+    {
+      "seed": 620143,
+      "success": true,
+      "steps": 47,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0075414907187223434,
+        -0.005221961531788111,
+        -0.0023752846755087376
+      ],
+      "vision_xy_mm": 9.17294742708417,
+      "vision_z_mm": -2.3752846755087376,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012034643381753616,
+      "object_pos": [
+        0.29224593861589965,
+        0.15920365000299283,
+        0.25254110825168785
+      ],
+      "vision_frames": 48,
+      "vision_valid_frames": 47,
+      "recoveries": 0
+    },
+    {
+      "seed": 620144,
+      "success": true,
+      "steps": 39,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004219952039420605,
+        0.015608765184879303,
+        0.00030977826099842787
+      ],
+      "vision_xy_mm": 16.16915414645152,
+      "vision_z_mm": 0.30977826099842787,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014322965708925776,
+      "object_pos": [
+        0.2913051202149776,
+        0.13861815426993174,
+        0.24173826124756176
+      ],
+      "vision_frames": 40,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620145,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00046624374226666987,
+        -0.0075438544154167175,
+        -0.003334411419928074
+      ],
+      "vision_xy_mm": 7.558248650858553,
+      "vision_z_mm": -3.334411419928074,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012769522587568038,
+      "object_pos": [
+        0.3015321079135658,
+        0.16267727701265533,
+        0.25910815188121655
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 45,
+      "recoveries": 0
+    },
+    {
+      "seed": 620146,
+      "success": true,
+      "steps": 37,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.010148437693715096,
+        0.0008833560277707875,
+        -0.0007717149564996362
+      ],
+      "vision_xy_mm": 10.186810369051557,
+      "vision_z_mm": -0.7717149564996362,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014297955510970442,
+      "object_pos": [
+        0.2857254427950373,
+        0.14918235191192167,
+        0.24863878860899716
+      ],
+      "vision_frames": 38,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620147,
+      "success": true,
+      "steps": 36,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.010875480249524117,
+        0.01702980324625969,
+        -0.0004494886379688978
+      ],
+      "vision_xy_mm": 20.206193834171398,
+      "vision_z_mm": -0.4494886379688978,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01464472921228605,
+      "object_pos": [
+        0.2856485973980152,
+        0.14708360889849662,
+        0.250041635111734
+      ],
+      "vision_frames": 37,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620148,
+      "success": true,
+      "steps": 44,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0016726041212677956,
+        -0.010456221178174019,
+        -0.0009541317704133689
+      ],
+      "vision_xy_mm": 10.589153217957367,
+      "vision_z_mm": -0.9541317704133689,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014052280301572701,
+      "object_pos": [
+        0.30535502294873507,
+        0.16299193253109362,
+        0.2578336654481451
+      ],
+      "vision_frames": 45,
+      "vision_valid_frames": 28,
+      "recoveries": 0
+    },
+    {
+      "seed": 620149,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007451740093529224,
+        0.015048070810735226,
+        0.00154114980250597
+      ],
+      "vision_xy_mm": 16.79204768771255,
+      "vision_z_mm": 1.54114980250597,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012135813479965663,
+      "object_pos": [
+        0.2912308380792235,
+        0.1416107349530653,
+        0.2481748899820504
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620150,
+      "success": true,
+      "steps": 36,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007977308705449104,
+        0.008118570782244205,
+        -0.0013110976433381438
+      ],
+      "vision_xy_mm": 11.381943846652177,
+      "vision_z_mm": -1.3110976433381438,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01372534865697389,
+      "object_pos": [
+        0.28914036639843876,
+        0.14160633847505527,
+        0.24659160430274768
+      ],
+      "vision_frames": 37,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620151,
+      "success": true,
+      "steps": 39,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003940757364034653,
+        0.007870431058108807,
+        -0.0015655681490898132
+      ],
+      "vision_xy_mm": 8.80188920872315,
+      "vision_z_mm": -1.5655681490898132,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.0164429588107691,
+      "object_pos": [
+        0.2882931671634762,
+        0.13845353043608838,
+        0.23884329292710751
+      ],
+      "vision_frames": 40,
+      "vision_valid_frames": 25,
+      "recoveries": 0
+    },
+    {
+      "seed": 620152,
+      "success": true,
+      "steps": 31,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007490693125873804,
+        0.015561608597636223,
+        -0.003986422438174486
+      ],
+      "vision_xy_mm": 17.270615091884792,
+      "vision_z_mm": -3.986422438174486,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013426298085986114,
+      "object_pos": [
+        0.2871366373260457,
+        0.14615300363763176,
+        0.24965147927464984
+      ],
+      "vision_frames": 32,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620153,
+      "success": true,
+      "steps": 29,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0037772951181977987,
+        0.006543345283716917,
+        -0.00820765271782875
+      ],
+      "vision_xy_mm": 7.555350813291289,
+      "vision_z_mm": -8.20765271782875,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.009045017937145138,
+      "object_pos": [
+        0.29695806245846895,
+        0.1414818449487755,
+        0.25992856955115906
+      ],
+      "vision_frames": 30,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620154,
+      "success": true,
+      "steps": 48,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.00045447557931765914,
+        -0.008569453842937946,
+        -0.00145725067704916
+      ],
+      "vision_xy_mm": 8.5814967935926,
+      "vision_z_mm": -1.45725067704916,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014106191222130141,
+      "object_pos": [
+        0.3033950702331188,
+        0.16369153493613817,
+        0.25600134486462567
+      ],
+      "vision_frames": 49,
+      "vision_valid_frames": 48,
+      "recoveries": 0
+    },
+    {
+      "seed": 620155,
+      "success": true,
+      "steps": 32,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0020089291501790285,
+        0.004543451592326164,
+        -0.006233173422515392
+      ],
+      "vision_xy_mm": 4.967770999376903,
+      "vision_z_mm": -6.233173422515392,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011647370625986257,
+      "object_pos": [
+        0.29553156625277455,
+        0.1392438695458941,
+        0.2242841319704707
+      ],
+      "vision_frames": 33,
+      "vision_valid_frames": 31,
+      "recoveries": 0
+    },
+    {
+      "seed": 620156,
+      "success": true,
+      "steps": 41,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0031187913846224546,
+        -0.009542547166347504,
+        -0.003660751972347498
+      ],
+      "vision_xy_mm": 10.039276175241023,
+      "vision_z_mm": -3.660751972347498,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013513693501751389,
+      "object_pos": [
+        0.297511768253341,
+        0.16328264336772602,
+        0.2530366883103213
+      ],
+      "vision_frames": 42,
+      "vision_valid_frames": 41,
+      "recoveries": 0
+    },
+    {
+      "seed": 620157,
+      "success": true,
+      "steps": 31,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00822397693991661,
+        0.004432590678334236,
+        -0.004543634597212076
+      ],
+      "vision_xy_mm": 9.342465243710343,
+      "vision_z_mm": -4.543634597212076,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01077184104630095,
+      "object_pos": [
+        0.292525458818511,
+        0.14224346767859508,
+        0.2543044991444489
+      ],
+      "vision_frames": 32,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620158,
+      "success": true,
+      "steps": 47,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0002168694045394659,
+        -0.004388913046568632,
+        -0.002962157828733325
+      ],
+      "vision_xy_mm": 4.394267864953803,
+      "vision_z_mm": -2.962157828733325,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014081427855887335,
+      "object_pos": [
+        0.30114374185153653,
+        0.16403490167538068,
+        0.2240816761590126
+      ],
+      "vision_frames": 48,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620159,
+      "success": true,
+      "steps": 51,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0018215811578556895,
+        0.001431155251339078,
+        -0.0024312783498317003
+      ],
+      "vision_xy_mm": 2.3165412295252366,
+      "vision_z_mm": -2.4312783498317003,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013059804485828727,
+      "object_pos": [
+        0.29685778560558646,
+        0.1626761580105177,
+        0.22412293225094987
+      ],
+      "vision_frames": 52,
+      "vision_valid_frames": 50,
+      "recoveries": 0
+    },
+    {
+      "seed": 620160,
+      "success": true,
+      "steps": 31,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006168406456708908,
+        0.008322608657181263,
+        -0.003406526055186987
+      ],
+      "vision_xy_mm": 10.35929790457619,
+      "vision_z_mm": -3.406526055186987,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014348258347436213,
+      "object_pos": [
+        0.2864550640900892,
+        0.14526637255361366,
+        0.2491980044253294
+      ],
+      "vision_frames": 32,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620161,
+      "success": true,
+      "steps": 31,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003279182594269514,
+        0.007226401008665562,
+        -0.0033554385881870985
+      ],
+      "vision_xy_mm": 7.935610249035848,
+      "vision_z_mm": -3.3554385881870985,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011740802747936556,
+      "object_pos": [
+        0.2956913193569621,
+        0.13907838289069493,
+        0.2480392682459409
+      ],
+      "vision_frames": 32,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620162,
+      "success": true,
+      "steps": 32,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003342948853969574,
+        0.02421835996210575,
+        -0.0034532444551587105
+      ],
+      "vision_xy_mm": 24.447991048231003,
+      "vision_z_mm": -3.4532444551587105,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011282285280775827,
+      "object_pos": [
+        0.29621894955457057,
+        0.13937015434326872,
+        0.224072101370388
+      ],
+      "vision_frames": 33,
+      "vision_valid_frames": 31,
+      "recoveries": 0
+    },
+    {
+      "seed": 620163,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0025742838624864817,
+        -0.013771510683000088,
+        -0.0020871362648904324
+      ],
+      "vision_xy_mm": 14.010047961968004,
+      "vision_z_mm": -2.0871362648904324,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013457438463881498,
+      "object_pos": [
+        0.29747629126950476,
+        0.16321868163822623,
+        0.25249447608324127
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 45,
+      "recoveries": 0
+    },
+    {
+      "seed": 620164,
+      "success": true,
+      "steps": 49,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0013290595961734653,
+        -0.0021240785717964172,
+        -0.0013399276649579406
+      ],
+      "vision_xy_mm": 2.5056155310313435,
+      "vision_z_mm": -1.3399276649579406,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013140947377608401,
+      "object_pos": [
+        0.30020407452703096,
+        0.16313936267740906,
+        0.25755394362821765
+      ],
+      "vision_frames": 50,
+      "vision_valid_frames": 49,
+      "recoveries": 0
+    },
+    {
+      "seed": 620165,
+      "success": true,
+      "steps": 31,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006533258128911257,
+        0.00846888404339552,
+        -0.00387354358099401
+      ],
+      "vision_xy_mm": 10.696048743319388,
+      "vision_z_mm": -3.87354358099401,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013061197117553295,
+      "object_pos": [
+        0.2877673954986218,
+        0.1454219810773169,
+        0.2518760687571188
+      ],
+      "vision_frames": 32,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620166,
+      "success": true,
+      "steps": 30,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0018660573987290263,
+        0.007380577269941568,
+        -0.0060506840236485004
+      ],
+      "vision_xy_mm": 7.612824118087155,
+      "vision_z_mm": -6.0506840236485,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.011983306997621046,
+      "object_pos": [
+        0.2966218899001032,
+        0.13850269515267996,
+        0.25083865264298527
+      ],
+      "vision_frames": 31,
+      "vision_valid_frames": 30,
+      "recoveries": 0
+    },
+    {
+      "seed": 620167,
+      "success": true,
+      "steps": 39,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0051992544904351234,
+        0.014033363200724125,
+        -0.0011334108421579003
+      ],
+      "vision_xy_mm": 14.965544760540721,
+      "vision_z_mm": -1.1334108421579003,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013353773572080105,
+      "object_pos": [
+        0.29242678351903123,
+        0.13900137914342128,
+        0.2551119471435347
+      ],
+      "vision_frames": 40,
+      "vision_valid_frames": 28,
+      "recoveries": 0
+    },
+    {
+      "seed": 620168,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.002401403384283185,
+        -0.009244312532246113,
+        -0.0024147157091647387
+      ],
+      "vision_xy_mm": 9.551128331662667,
+      "vision_z_mm": -2.4147157091647387,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01324734564697694,
+      "object_pos": [
+        0.3002582484501115,
+        0.16324482821438216,
+        0.25672280704232875
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620169,
+      "success": true,
+      "steps": 35,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003866717917844653,
+        0.007004086393862963,
+        -0.0018186909146606922
+      ],
+      "vision_xy_mm": 8.000545835683786,
+      "vision_z_mm": -1.8186909146606922,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.015365121321934409,
+      "object_pos": [
+        0.2889830412096646,
+        0.13928955779391833,
+        0.24357036565112486
+      ],
+      "vision_frames": 36,
+      "vision_valid_frames": 25,
+      "recoveries": 0
+    },
+    {
+      "seed": 620170,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006611970253288746,
+        0.008013642393052578,
+        -0.0006046898779459298
+      ],
+      "vision_xy_mm": 10.389254787235929,
+      "vision_z_mm": -0.6046898779459298,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.015394085309160095,
+      "object_pos": [
+        0.28890045770693384,
+        0.13933332182026031,
+        0.24850896613499907
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620171,
+      "success": true,
+      "steps": 39,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.005260887090116739,
+        0.008980625309050083,
+        9.184685768559575e-05
+      ],
+      "vision_xy_mm": 10.408100879435588,
+      "vision_z_mm": 0.09184685768559575,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013663578719064057,
+      "object_pos": [
+        0.2911843965327696,
+        0.13956072229890323,
+        0.2453092887510056
+      ],
+      "vision_frames": 40,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620172,
+      "success": true,
+      "steps": 34,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.01036248728632927,
+        -0.002187557751312852,
+        -0.002397135365754366
+      ],
+      "vision_xy_mm": 10.590871148053152,
+      "vision_z_mm": -2.397135365754366,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014413158392133113,
+      "object_pos": [
+        0.28559505195367285,
+        0.15048642226442996,
+        0.2441255414363832
+      ],
+      "vision_frames": 35,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620173,
+      "success": true,
+      "steps": 31,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.005435172468423843,
+        0.0026119386311620474,
+        -0.006104070693254471
+      ],
+      "vision_xy_mm": 6.030200923225461,
+      "vision_z_mm": -6.104070693254471,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.008254849328054514,
+      "object_pos": [
+        0.2961624465749646,
+        0.14269139403587242,
+        0.25949017553571513
+      ],
+      "vision_frames": 32,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620174,
+      "success": true,
+      "steps": 47,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00035910395672544837,
+        -0.005411547143012285,
+        -0.0022994684986770153
+      ],
+      "vision_xy_mm": 5.4234489149230765,
+      "vision_z_mm": -2.2994684986770153,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013771848678462609,
+      "object_pos": [
+        0.30135254780649956,
+        0.16370527017076297,
+        0.22432285501480032
+      ],
+      "vision_frames": 48,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620175,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0005385815165936947,
+        -0.008704189211130142,
+        -0.0019663404673337936
+      ],
+      "vision_xy_mm": 8.720835961831337,
+      "vision_z_mm": -1.9663404673337936,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012491614945953949,
+      "object_pos": [
+        0.30277701876156055,
+        0.16217902339089307,
+        0.2588992457106761
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 32,
+      "recoveries": 0
+    },
+    {
+      "seed": 620176,
+      "success": true,
+      "steps": 45,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.00335611030459404,
+        -0.004590238444507122,
+        -0.0022092110011726618
+      ],
+      "vision_xy_mm": 5.686278691203365,
+      "vision_z_mm": -2.209211001172662,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014579857594735022,
+      "object_pos": [
+        0.30584598972424115,
+        0.16335652094023062,
+        0.22409981725209394
+      ],
+      "vision_frames": 46,
+      "vision_valid_frames": 44,
+      "recoveries": 0
+    },
+    {
+      "seed": 620177,
+      "success": true,
+      "steps": 41,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.003224533749744296,
+        0.018967272713780403,
+        -0.00015264681132975966
+      ],
+      "vision_xy_mm": 19.239414026995693,
+      "vision_z_mm": -0.15264681132975966,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01407028729556765,
+      "object_pos": [
+        0.29464968203262143,
+        0.1369866575305282,
+        0.2474862554779159
+      ],
+      "vision_frames": 42,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620178,
+      "success": true,
+      "steps": 39,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0035572161432355642,
+        0.010298268869519234,
+        0.00032399533665739
+      ],
+      "vision_xy_mm": 10.895325988634056,
+      "vision_z_mm": 0.32399533665739,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013580290860985465,
+      "object_pos": [
+        0.29480972355854923,
+        0.13745068406922964,
+        0.24756952586274567
+      ],
+      "vision_frames": 40,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620179,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00018954199913423508,
+        -0.007570900022983551,
+        -0.002141431672498584
+      ],
+      "vision_xy_mm": 7.573272299835002,
+      "vision_z_mm": -2.141431672498584,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013145295075968413,
+      "object_pos": [
+        0.30187778445768626,
+        0.1630104845476543,
+        0.25108550535397456
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 43,
+      "recoveries": 0
+    },
+    {
+      "seed": 620180,
+      "success": true,
+      "steps": 39,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.004076357930898666,
+        0.011614753864705563,
+        -0.001828376785852015
+      ],
+      "vision_xy_mm": 12.309313600623442,
+      "vision_z_mm": -1.828376785852015,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01306602669414613,
+      "object_pos": [
+        0.3026192364596617,
+        0.13719919323087337,
+        0.25192721823729647
+      ],
+      "vision_frames": 40,
+      "vision_valid_frames": 39,
+      "recoveries": 0
+    },
+    {
+      "seed": 620181,
+      "success": true,
+      "steps": 48,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.005729026161134243,
+        -0.007212908938527107,
+        -0.0009408267796970904
+      ],
+      "vision_xy_mm": 9.21128634396113,
+      "vision_z_mm": -0.9408267796970904,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012364606230421599,
+      "object_pos": [
+        0.2946758567178902,
+        0.1611596140410386,
+        0.24941422413578818
+      ],
+      "vision_frames": 49,
+      "vision_valid_frames": 48,
+      "recoveries": 0
+    },
+    {
+      "seed": 620182,
+      "success": true,
+      "steps": 44,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.007670569699257612,
+        0.01853480190038681,
+        0.002156186616048217
+      ],
+      "vision_xy_mm": 20.059325038439145,
+      "vision_z_mm": 2.156186616048217,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.015367967475485852,
+      "object_pos": [
+        0.2879875139748284,
+        0.14041487590989826,
+        0.2396307823021291
+      ],
+      "vision_frames": 45,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620183,
+      "success": true,
+      "steps": 39,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006042184308171272,
+        0.007728590164333582,
+        -0.0017685361672192812
+      ],
+      "vision_xy_mm": 9.810152758349124,
+      "vision_z_mm": -1.7685361672192812,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013560231129082096,
+      "object_pos": [
+        0.2921754798303296,
+        0.1389249491022141,
+        0.2547066426628554
+      ],
+      "vision_frames": 40,
+      "vision_valid_frames": 27,
+      "recoveries": 0
+    },
+    {
+      "seed": 620184,
+      "success": true,
+      "steps": 47,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.008712057955563068,
+        -0.004140437580645084,
+        -0.0013214265927672386
+      ],
+      "vision_xy_mm": 9.645889133735048,
+      "vision_z_mm": -1.3214265927672386,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012511309625024185,
+      "object_pos": [
+        0.29091881910843165,
+        0.15860610377277876,
+        0.24909509622348
+      ],
+      "vision_frames": 48,
+      "vision_valid_frames": 47,
+      "recoveries": 0
+    },
+    {
+      "seed": 620185,
+      "success": true,
+      "steps": 47,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.010601206682622433,
+        -0.0011767575051635504,
+        9.853461233433336e-05
+      ],
+      "vision_xy_mm": 10.666318078589127,
+      "vision_z_mm": 0.09853461233433336,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013389769778979436,
+      "object_pos": [
+        0.2866540821689443,
+        0.14891722025287674,
+        0.24825612178306952
+      ],
+      "vision_frames": 48,
+      "vision_valid_frames": 32,
+      "recoveries": 0
+    },
+    {
+      "seed": 620186,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00017684258637018502,
+        -0.004391476511955261,
+        -0.001943137962371111
+      ],
+      "vision_xy_mm": 4.395035751323173,
+      "vision_z_mm": -1.943137962371111,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013582619374725338,
+      "object_pos": [
+        0.3014329517520522,
+        0.16350682043839165,
+        0.257722468162275
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 43,
+      "recoveries": 0
+    },
+    {
+      "seed": 620187,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.00915575586259365,
+        0.014481913298368454,
+        0.0013323036255314946
+      ],
+      "vision_xy_mm": 17.13340824812387,
+      "vision_z_mm": 1.3323036255314946,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013222162219583295,
+      "object_pos": [
+        0.28919431483372887,
+        0.14238010880337493,
+        0.24846290922374067
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620188,
+      "success": true,
+      "steps": 49,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0006175806629471481,
+        0.0021209553815424442,
+        -0.0039028325118124485
+      ],
+      "vision_xy_mm": 2.20903997377596,
+      "vision_z_mm": -3.9028325118124485,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014150344896045082,
+      "object_pos": [
+        0.30044490290316833,
+        0.16414334904058375,
+        0.2241618117350496
+      ],
+      "vision_frames": 50,
+      "vision_valid_frames": 48,
+      "recoveries": 0
+    },
+    {
+      "seed": 620189,
+      "success": true,
+      "steps": 53,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0033840080723166466,
+        0.018641673028469086,
+        0.002224122639745474
+      ],
+      "vision_xy_mm": 18.94633167486139,
+      "vision_z_mm": 2.224122639745474,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.015581060670847195,
+      "object_pos": [
+        0.2920103268572874,
+        0.13662335712141352,
+        0.24290378447539668
+      ],
+      "vision_frames": 54,
+      "vision_valid_frames": 25,
+      "recoveries": 0
+    },
+    {
+      "seed": 620190,
+      "success": true,
+      "steps": 38,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.010828032158315182,
+        -0.001179439015686512,
+        0.00056595413479954
+      ],
+      "vision_xy_mm": 10.892077708740024,
+      "vision_z_mm": 0.56595413479954,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014478861154961435,
+      "object_pos": [
+        0.2855825318349459,
+        0.1486680720536367,
+        0.24790445224199198
+      ],
+      "vision_frames": 39,
+      "vision_valid_frames": 24,
+      "recoveries": 0
+    },
+    {
+      "seed": 620191,
+      "success": true,
+      "steps": 44,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0008723204373382032,
+        -0.008578312583267689,
+        -0.0028740542475134134
+      ],
+      "vision_xy_mm": 8.62255123044489,
+      "vision_z_mm": -2.8740542475134134,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013075999481287966,
+      "object_pos": [
+        0.300009124435038,
+        0.16307599629777128,
+        0.2556419101608589
+      ],
+      "vision_frames": 45,
+      "vision_valid_frames": 44,
+      "recoveries": 0
+    },
+    {
+      "seed": 620192,
+      "success": true,
+      "steps": 49,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0014176004333421588,
+        -0.007752979174256325,
+        -0.0021505006588995457
+      ],
+      "vision_xy_mm": 7.881514896583281,
+      "vision_z_mm": -2.1505006588995457,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013293304266500756,
+      "object_pos": [
+        0.29998256648439775,
+        0.16329329283489613,
+        0.25734370885732843
+      ],
+      "vision_frames": 50,
+      "vision_valid_frames": 49,
+      "recoveries": 0
+    },
+    {
+      "seed": 620193,
+      "success": true,
+      "steps": 43,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004981168080121279,
+        0.010136478580534458,
+        0.001429494470357895
+      ],
+      "vision_xy_mm": 11.294256657967933,
+      "vision_z_mm": 1.429494470357895,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01358340856951921,
+      "object_pos": [
+        0.2919683870385511,
+        0.1390454492742069,
+        0.243761097589058
+      ],
+      "vision_frames": 44,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620194,
+      "success": true,
+      "steps": 35,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.005510248243808746,
+        0.006241227965801954,
+        -0.0019877359736710787
+      ],
+      "vision_xy_mm": 8.325608820350965,
+      "vision_z_mm": -1.9877359736710787,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013014413670790459,
+      "object_pos": [
+        0.2941285565791221,
+        0.13838530605870789,
+        0.25363031708878936
+      ],
+      "vision_frames": 36,
+      "vision_valid_frames": 22,
+      "recoveries": 0
+    },
+    {
+      "seed": 620195,
+      "success": true,
+      "steps": 49,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006389988120645285,
+        -0.005554807372391224,
+        -0.0017603669548407197
+      ],
+      "vision_xy_mm": 8.466866783312451,
+      "vision_z_mm": -1.7603669548407197,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012435270119243308,
+      "object_pos": [
+        0.2936872471177402,
+        0.16071378056458438,
+        0.254738399876386
+      ],
+      "vision_frames": 50,
+      "vision_valid_frames": 49,
+      "recoveries": 0
+    },
+    {
+      "seed": 620196,
+      "success": true,
+      "steps": 39,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.006038033403456211,
+        0.003045411314815283,
+        0.00010962704982375726
+      ],
+      "vision_xy_mm": 6.762571807948359,
+      "vision_z_mm": 0.10962704982375726,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.012962734780143833,
+      "object_pos": [
+        0.2924017553120049,
+        0.1394976588018811,
+        0.24954899094288893
+      ],
+      "vision_frames": 40,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620197,
+      "success": true,
+      "steps": 46,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.0035620660055428743,
+        -0.005414318293333054,
+        -0.0018217222532257438
+      ],
+      "vision_xy_mm": 6.480984246961654,
+      "vision_z_mm": -1.8217222532257438,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.013803674563486253,
+      "object_pos": [
+        0.2974218808532168,
+        0.1635607792224351,
+        0.25047493915207253
+      ],
+      "vision_frames": 47,
+      "vision_valid_frames": 46,
+      "recoveries": 0
+    },
+    {
+      "seed": 620198,
+      "success": true,
+      "steps": 40,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        0.004646283108741045,
+        0.009153228253126144,
+        0.00026226771296933293
+      ],
+      "vision_xy_mm": 10.264966350670568,
+      "vision_z_mm": 0.26226771296933293,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.01236875311711809,
+      "object_pos": [
+        0.29642920538220857,
+        0.13815789379080856,
+        0.2449410630965171
+      ],
+      "vision_frames": 41,
+      "vision_valid_frames": 23,
+      "recoveries": 0
+    },
+    {
+      "seed": 620199,
+      "success": true,
+      "steps": 37,
+      "stage": 1,
+      "vision_valid": true,
+      "vision_err": [
+        -0.0005824671243317425,
+        0.008404957130551338,
+        -0.0016222603153437376
+      ],
+      "vision_xy_mm": 8.425115567001622,
+      "vision_z_mm": -1.6222603153437376,
+      "lifted": false,
+      "placed": true,
+      "dist_to_box": 0.014148008347719544,
+      "object_pos": [
+        0.3033326294791525,
+        0.13625010105630497,
+        0.2503448737834493
+      ],
+      "vision_frames": 38,
+      "vision_valid_frames": 37,
+      "recoveries": 0
+    }
+  ]
+}

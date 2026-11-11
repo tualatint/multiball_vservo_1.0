@@ -1,0 +1,90 @@
+<mujoco model="ARX L5 Vertical Grasping Scene (MetaWorld-style EE interface)">
+  <!-- Scene for the MetaWorld-style EE-space interface (action_mode='metaworld').
+
+       Mirrors the VALIDATED pick-place scene of the external 3D-Diffusion-Policy
+       experiment (single 4 cm upright cylinder, 0.06 kg, condim 4) but keeps the
+       RL-100 grasp-bundle conventions:
+         * same fixed `cam_pc` camera + workspace geometry as arx5.xml so the
+           DP3 depth->back-projection->FPS point-cloud pipeline is unchanged,
+         * same table / floor / backdrop geom names (the point-cloud
+           segmentation code filters on these names),
+         * grasp-only task (no place target): "vertical 3DoF grasping" - the
+           differential IK holds the gripper orientation fixed and the policy
+           only commands [dx, dy, dz, gripper]. -->
+  <include file="arx5_robot_mw.xml"/>
+
+  <visual>
+    <headlight diffuse="0.7 0.7 0.7" ambient="0.45 0.45 0.45" specular="0 0 0"/>
+    <rgba haze="0.82 0.84 0.87 1"/>
+    <global azimuth="140" elevation="-20"/>
+  </visual>
+
+  <asset>
+    <texture name="gray" type="cube" builtin="flat" rgb1="0.5 0.5 0.5" rgb2="0.5 0.5 0.5" width="1" height="1"/>
+    <texture name="white" type="cube" builtin="flat" rgb1="0.92 0.92 0.92" rgb2="0.92 0.92 0.92" width="1" height="1"/>
+
+    <material name="gray" texture="gray" specular="0.2" shininess="0.3"/>
+    <material name="white" texture="white" specular="0.2" shininess="0.3"/>
+    <material name="table_mat" specular="0.0" shininess="0.0" rgba="0.32 0.32 0.32 1"/>
+    <material name="floor_mat" specular="0.0" shininess="0.0" rgba="0.7 0.7 0.7 1"/>
+    <material name="bg_mat" specular="0.0" shininess="0.0" rgba="0.82 0.84 0.87 1"/>
+  </asset>
+
+  <worldbody>
+    <light name="light0" pos="0.5 0.5 2" dir="0 0 -1" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3"/>
+    <light name="light1" pos="-0.5 -0.5 2" dir="0 0 -1" diffuse="0.6 0.6 0.6" specular="0.2 0.2 0.2"/>
+    <light name="light2" pos="0 0 3" dir="0 0 -1" diffuse="0.4 0.4 0.4" specular="0.1 0.1 0.1"/>
+
+    <!-- Floor -->
+    <geom name="floor" type="plane" size="2 2 0.1" material="floor_mat" contype="1" conaffinity="1"/>
+
+    <!-- Light backdrop room (visual only, no collision) -->
+    <geom name="bg_ceiling" type="box" size="5 5 0.02" pos="0.5 0 6.0" material="bg_mat" contype="0" conaffinity="0"/>
+    <geom name="bg_back" type="box" size="0.02 5 6.1" pos="-2.5 0 3.0" material="bg_mat" contype="0" conaffinity="0"/>
+    <geom name="bg_left" type="box" size="3 0.02 6.1" pos="0.5 -2.5 3.0" material="bg_mat" contype="0" conaffinity="0"/>
+    <geom name="bg_right" type="box" size="3 0.02 6.1" pos="0.5 2.5 3.0" material="bg_mat" contype="0" conaffinity="0"/>
+
+    <!-- Table (same geometry as arx5.xml; top surface at world z = 0.19) -->
+    <body name="table" pos="0.36 0 0.15" mocap="false">
+      <geom name="table_top" type="box" size="0.30 0.45 0.04" material="table_mat" contype="1" conaffinity="1" friction="0.5 0.005 0.0001"/>
+      <geom name="table_leg1" type="box" size="0.02 0.02 0.11" pos="-0.27 -0.42 -0.13" material="table_mat"/>
+      <geom name="table_leg2" type="box" size="0.02 0.02 0.11" pos="-0.27 0.42 -0.13" material="table_mat"/>
+      <geom name="table_leg3" type="box" size="0.02 0.02 0.11" pos="0.27 -0.42 -0.13" material="table_mat"/>
+      <geom name="table_leg4" type="box" size="0.02 0.02 0.11" pos="0.27 0.42 -0.13" material="table_mat"/>
+    </body>
+
+    <!-- Object-facing tabletop collider: analytic plane (exact vertical
+         normal, smooth line contact for the cylinder), coplanar with the box
+         top (world z=0.19), render-transparent. -->
+    <body name="table_surface" pos="0.36 0 0.19">
+      <geom name="table_top_objplane" type="plane" size="0.30 0.45 0.05" rgba="0 0 0 0" condim="6" friction="1.5 0.005 0.0002"/>
+    </body>
+
+    <!-- Fixed camera for the depth-based point cloud (same pose as arx5.xml) -->
+    <camera name="cam_pc" pos="0.5643 -0.4404 0.8672"
+            xyaxes="0.7727 0.6347 -0.0000  -0.4724 0.5752 0.6678" fovy="45.0"/>
+
+    <!-- ========== Graspable object: single 4 cm UPRIGHT cylinder ==========
+         Exactly the trivially-graspable target of the working experiment
+         (MetaWorld pick-place object: cylinder r=0.02, h=0.04, mass 0.06 kg,
+         condim 4). Rotationally symmetric about the vertical axis, so a
+         fixed-orientation parallel-jaw clamp is always stable. -->
+    <body name="cylinder" pos="0.3 0 0.21" mocap="false">
+      <freejoint name="cylinder_joint"/>
+      <inertial pos="0 0 0" mass="0.06" diaginertia="1.4e-5 1.4e-5 1.2e-5"/>
+      <geom name="cylinder_visual" type="cylinder" size="0.02 0.02" material="white" contype="1" conaffinity="1" condim="4" friction="1 0.1 0.002"/>
+    </body>
+  </worldbody>
+
+  <!-- Sensors -->
+  <sensor>
+    <touch name="left_touch" site="left_touch_site"/>
+    <touch name="right_touch" site="right_touch_site"/>
+  </sensor>
+
+  <!-- The cylinder rests on the analytic table_surface plane, not the hull-box
+       table body (cylinder-vs-box rides the convex hull and never settles). -->
+  <contact>
+    <exclude body1="cylinder" body2="table"/>
+  </contact>
+</mujoco>

@@ -1,0 +1,121 @@
+<mujoco model="ARX L5 Grasping Scene">
+  <!-- Include the official ARX L5 robot model -->
+  <include file="arx5_robot.xml"/>
+
+  <visual>
+    <headlight diffuse="0.7 0.7 0.7" ambient="0.45 0.45 0.45" specular="0 0 0"/>
+    <rgba haze="0.82 0.84 0.87 1"/>
+    <global azimuth="140" elevation="-20"/>
+  </visual>
+
+  <asset>
+    <texture name="blue" type="cube" builtin="flat" rgb1="0.2 0.3 0.8" rgb2="0.2 0.3 0.8" width="1" height="1"/>
+    <texture name="gray" type="cube" builtin="flat" rgb1="0.5 0.5 0.5" rgb2="0.5 0.5 0.5" width="1" height="1"/>
+    <texture name="red" type="cube" builtin="flat" rgb1="0.8 0.2 0.2" rgb2="0.8 0.2 0.2" width="1" height="1"/>
+    <texture name="green" type="cube" builtin="flat" rgb1="0.2 0.8 0.2" rgb2="0.2 0.8 0.2" width="1" height="1"/>
+    <texture name="orange" type="cube" builtin="flat" rgb1="0.9 0.6 0.1" rgb2="0.9 0.6 0.1" width="1" height="1"/>
+    <texture name="white" type="cube" builtin="flat" rgb1="0.9 0.9 0.9" rgb2="0.9 0.9 0.9" width="1" height="1"/>
+    <texture name="yellow" type="cube" builtin="flat" rgb1="0.9 0.9 0.2" rgb2="0.9 0.9 0.2" width="1" height="1"/>
+
+    <material name="blue" texture="blue" specular="0.2" shininess="0.3"/>
+    <material name="gray" texture="gray" specular="0.2" shininess="0.3"/>
+    <material name="red" texture="red" specular="0.2" shininess="0.3"/>
+    <material name="green" texture="green" specular="0.2" shininess="0.3"/>
+    <material name="orange" texture="orange" specular="0.2" shininess="0.3"/>
+    <material name="white" texture="white" specular="0.2" shininess="0.3"/>
+    <material name="yellow" texture="yellow" specular="0.2" shininess="0.3"/>
+    <material name="table_mat" specular="0.0" shininess="0.0" rgba="0.32 0.32 0.32 1"/>
+    <material name="floor_mat" specular="0.0" shininess="0.0" rgba="0.7 0.7 0.7 1"/>
+    <material name="bg_mat" specular="0.0" shininess="0.0" rgba="0.82 0.84 0.87 1"/>
+  </asset>
+
+  <worldbody>
+    <light name="light0" pos="0.5 0.5 2" dir="0 0 -1" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3"/>
+    <light name="light1" pos="-0.5 -0.5 2" dir="0 0 -1" diffuse="0.6 0.6 0.6" specular="0.2 0.2 0.2"/>
+    <light name="light2" pos="0 0 3" dir="0 0 -1" diffuse="0.4 0.4 0.4" specular="0.1 0.1 0.1"/>
+
+    <!-- Floor -->
+    <geom name="floor" type="plane" size="2 2 0.1" material="floor_mat" contype="1" conaffinity="1"/>
+
+    <!-- Light backdrop room (visual only, no collision): fills the otherwise
+         black background so the dark robot stands out against a bright scene -->
+    <geom name="bg_ceiling" type="box" size="5 5 0.02" pos="0.5 0 6.0" material="bg_mat" contype="0" conaffinity="0"/>
+    <geom name="bg_back" type="box" size="0.02 5 6.1" pos="-2.5 0 3.0" material="bg_mat" contype="0" conaffinity="0"/>
+    <geom name="bg_left" type="box" size="3 0.02 6.1" pos="0.5 -2.5 3.0" material="bg_mat" contype="0" conaffinity="0"/>
+    <geom name="bg_right" type="box" size="3 0.02 6.1" pos="0.5 2.5 3.0" material="bg_mat" contype="0" conaffinity="0"/>
+
+    <!-- Table - sits fully in front of the robot (near edge at x=0.06) so the
+         robot base / pedestal is never underneath it. Larger table (x 0.06..0.66,
+         y +/-0.45) leaves room for varied object poses. -->
+    <body name="table" pos="0.36 0 0.15" mocap="false">
+      <!-- Robot-facing collider + visuals. Graspable objects do NOT collide
+           with this body (see <contact><exclude> below): MuJoCo's
+           cylinder-vs-box path rides the cylinder's convex hull like a
+           polygon wheel, producing perpetual micro-rocking / spin-up of
+           resting objects ("oscillation with no external force"). -->
+      <geom name="table_top" type="box" size="0.30 0.45 0.04" material="table_mat" contype="1" conaffinity="1" friction="0.5 0.005 0.0001"/>
+      <geom name="table_leg1" type="box" size="0.02 0.02 0.11" pos="-0.27 -0.42 -0.13" material="table_mat"/>
+      <geom name="table_leg2" type="box" size="0.02 0.02 0.11" pos="-0.27 0.42 -0.13" material="table_mat"/>
+      <geom name="table_leg3" type="box" size="0.02 0.02 0.11" pos="0.27 -0.42 -0.13" material="table_mat"/>
+      <geom name="table_leg4" type="box" size="0.02 0.02 0.11" pos="0.27 0.42 -0.13" material="table_mat"/>
+    </body>
+
+    <!-- Object-facing tabletop collider: analytic plane (exact vertical
+         normal, smooth line contact for cylinders), coplanar with the box
+         top (world z=0.19), render-transparent. Own static body so objects
+         can be excluded from the hull-box table body via <contact><exclude>
+         while still colliding with this plane and with the robot. -->
+    <body name="table_surface" pos="0.36 0 0.19">
+      <geom name="table_top_objplane" type="plane" size="0.30 0.45 0.05" rgba="0 0 0 0" condim="6" friction="1.5 0.005 0.0002"/>
+    </body>
+
+    <!-- Fixed camera for real depth-based point cloud rendering (DP3-style).
+         Pose picked interactively with scripts/pick_camera_pose.py and saved
+         to data/picked_cam.json (raised above the original view so more robot
+         points are visible). Converted from the picked free camera. -->
+    <camera name="cam_pc" pos="0.5643 -0.4404 0.8672"
+            xyaxes="0.7727 0.6347 -0.0000  -0.4724 0.5752 0.6678" fovy="45.0"/>
+
+    <!-- ========== Graspable Objects ========== -->
+    <!-- Each object gets a DISTINCT color so the point-cloud RGB branch of
+         the DP3 encoder carries real object-discriminating information
+         (all-white scene rendered as flat gray, which the encoder cannot
+         use). Colors are bright to survive the EGL render + PC color pass. -->
+    <!-- Cube: 6cm (RED) -->
+    <!-- PHYSICS TUNED (2026-09-02): objects made heavier (realistic ~0.15-0.2 kg,
+         previously near-massless so a misaligned gripper shoved them off the
+         table) and object/table friction raised so nudges don't slide them. -->
+    <body name="cube" pos="0.3 0 0.17" mocap="false">
+      <freejoint name="cube_joint"/>
+      <inertial pos="0 0 0" mass="0.20" diaginertia="0.0001 0.0001 0.0001"/>
+      <geom name="cube_visual" type="box" size="0.035 0.035 0.035" material="red" contype="1" conaffinity="1" condim="6" friction="1.5 0.005 0.0002"/>
+    </body>
+
+    <!-- Sphere: 6cm diameter (GREEN) -->
+    <body name="sphere" pos="0.3 0.1 0.17" mocap="false">
+      <freejoint name="sphere_joint"/>
+      <inertial pos="0 0 0" mass="0.15" diaginertia="0.0001 0.0001 0.0001"/>
+      <geom name="sphere_visual" type="sphere" size="0.035" material="green" contype="1" conaffinity="1" condim="6" friction="1.5 0.005 0.0002"/>
+    </body>
+
+    <!-- Cylinder: 5cm radius, 6cm tall (ORANGE) -->
+    <body name="cylinder" pos="0.3 -0.1 0.17" mocap="false">
+      <freejoint name="cylinder_joint"/>
+      <inertial pos="0 0 0" mass="0.16" diaginertia="0.0001 0.0001 0.0001"/>
+      <geom name="cylinder_visual" type="cylinder" size="0.028 0.035" material="orange" contype="1" conaffinity="1" condim="6" friction="1.5 0.005 0.0002"/>
+    </body>
+  </worldbody>
+
+  <!-- Sensors -->
+  <sensor>
+    <touch name="left_touch" site="left_touch_site"/>
+    <touch name="right_touch" site="right_touch_site"/>
+  </sensor>
+  <!-- Objects never touch the hull-box table body; they rest on the
+       analytic table_surface plane instead (see body above). -->
+  <contact>
+    <exclude body1="cube" body2="table"/>
+    <exclude body1="sphere" body2="table"/>
+    <exclude body1="cylinder" body2="table"/>
+  </contact>
+</mujoco>
